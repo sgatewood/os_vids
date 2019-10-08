@@ -46,6 +46,7 @@ for i in range(len(segments)):
 	segment = segments[i]
 	print_t(1,'<div class="vid">',file=file)
 	print_t(2,"<h1>%s</h1>" % segment["name"],file=file)
+	print_t(2,"<h2 class='go-back'>Go Back</h2>",file=file)
 
 	if "start" in segment:
 		start = segment["start"]
@@ -62,7 +63,7 @@ for i in range(len(segments)):
 		stop = segments[i+1]["start"]
 
 	print_video_tag(src,start,stop,file=file)
-	print_t(2,"<br/><br/><a class='go-back' href=\"javascript:window.location.href=window.location.href\">Go Back</a><br/>",file=file)
+	print_t(2,"<h2 class='go-back'>Go Back</h2>",file=file)
 	print_t(1,'</div> <!-- vid -->',file=file)
 
 

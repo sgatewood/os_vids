@@ -10,12 +10,12 @@ body{
 }
 
 .go-back {
-	font-size: 30px;
+	font-size: 15px;
 	border-radius: 20px;
 	border: 3px solid black;
 	padding: 10px;
-	text-decoration: none;
-	margin-bottom: 100px;
+	margin-left: 40%;	
+	width: 20%;
 }
 
 .go-back:hover{
@@ -32,6 +32,6 @@ body{
 }
 
 video {
-	width: 80%;
+	width: 70%;
 	border: 8px solid black;
 }
