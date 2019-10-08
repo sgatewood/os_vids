@@ -10,13 +10,19 @@ function toggle(el,attr){
 
 $(function(){
 	$("video").hide();
+	$(".go-back").hide();
+	$(".vid hr").hide();
+	$(".vid br").hide();
 
 
 	$(".vid").click(function(){
 		if(toggle($(this),"toggled")){
 			$(this).children("video").toggle();
+			$(this).children(".go-back").toggle();
+			$(this).children("hr").toggle();
+			$(this).children("br").toggle();
 			$(".vid").not($(this)).toggle();
-			$(this).children("h1").css("font-size","40px");
+			// $(this).children("h1").css("font-size","40px");
 			$(this).css("text-align","center")
 			$(this).css("background-color","inherit")
 		}

@@ -9,6 +9,19 @@ body{
 	border-radius: 30px;
 }
 
+.go-back {
+	font-size: 30px;
+	border-radius: 20px;
+	border: 3px solid black;
+	padding: 10px;
+	text-decoration: none;
+	margin-bottom: 100px;
+}
+
+.go-back:hover{
+	background-color: yellow;
+}
+
 .vid h1 {
 	font-size: 20px;
 }
