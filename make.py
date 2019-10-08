@@ -41,10 +41,27 @@ file = open(output_path,"w")
 
 print_intro(file=file)
 
-for segment in obj["segments"]:
+segments = obj["segments"]
+for i in range(len(segments)):
+	segment = segments[i]
 	print_t(1,'<div class="vid">',file=file)
 	print_t(2,"<h1>%s</h1>" % segment["name"],file=file)
-	print_video_tag(src,segment["start"],segment["stop"],file=file)
+
+	if "start" in segment:
+		start = segment["start"]
+	elif i == 0:
+		start = ""
+	else:
+		start = segments[i-1]["stop"]
+
+	if "stop" in segment:
+		stop = segment["stop"]
+	elif i == len(segments)-1:
+		stop = ""
+	else:
+		stop = segments[i+1]["start"]
+
+	print_video_tag(src,start,stop,file=file)
 	print_t(2,"<br/><br/><a class='go-back' href=\"javascript:window.location.href=window.location.href\">Go Back</a><br/>",file=file)
 	print_t(1,'</div> <!-- vid -->',file=file)
 
@@ -53,5 +70,6 @@ print_closing(file=file)
 
 file.close()
 
-os.system("open " + output_path)
+if "-o" in sys.argv:
+	os.system("open " + output_path)
 
