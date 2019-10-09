@@ -1,10 +1,10 @@
-import yaml
+import yaml,markdown
 import os,sys
 
 path = sys.argv[1]
 
 def get_attrs():
-	return yaml.safe_load(open(path))
+	return yaml.safe_load(open(path + "/" + path + ".yaml"))
 
 def print_t(tab_level,*args,**kwargs):
 	print("\t" * tab_level,end="",**kwargs)
@@ -30,13 +30,18 @@ def print_intro(file=sys.stdout):
 def print_closing(file=sys.stdout):
 	print_t(0,"</body>",file=file)
 	print_t(0,"</html>",file=file)
+
+def get_markdown_html(filepath):
+	with open(filepath) as y:
+		md = y.read()
+	return markdown.markdown(md)
 	
 
 obj = get_attrs()
 src = obj["url"]
 
 # file = sys.stdout
-output_path = path.split(".")[0] + ".html"
+output_path = path + "/" + path + ".html"
 file = open(output_path,"w")
 
 print_intro(file=file)
@@ -63,6 +68,13 @@ for i in range(len(segments)):
 		stop = segments[i+1]["start"]
 
 	print_video_tag(src,start,stop,file=file)
+
+	if "notes" in segment:
+		print_t(2,"<div class='notes'>",file=file)
+		print(get_markdown_html(path + "/" + segment["notes"]),file=file)
+		print_t(2,"</div>",file=file)
+
+
 	print_t(2,"<h2 class='go-back'>Go Back</h2>",file=file)
 	print_t(1,'</div> <!-- vid -->',file=file)
 

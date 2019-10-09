@@ -1,10 +1,9 @@
 url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20190926-video-and-audio.webm"
 segments:
 
-  - name: "Intro/Flashback"
-    start: ""
-    stop: "20"
+  - name: "Monitors/Condition Variables"
+    start: "40:03"
+    notes: "monitors_condition_vars.txt"
 
-  - name: "Test"
-    start: "20"
-    stop: "30"
+  - name: "End-buffer"
+    start: "01:16:00"
