@@ -1,0 +1,73 @@
+name: "Lecture 12 (Thurs Oct 3): Synchronization 5: Reader+Writer con't / Deadlock"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191003-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "Reader / Writer priority"
+    start: "01:30"
+
+  - name: "In general: Choosing orderings"
+    start: "02:12"
+
+  - name: "Simulation of reader/writer lock"
+    start: "02:43"
+
+  - name: "rwlock exercise"
+    start: "05:50"
+
+  - name: "rwlock exercise 2"
+    start: "16:10"
+
+  - name: "The \"Cheeky\" solution"
+    start: "18:26"
+
+  - name: "Deadlock analogies"
+    start: "19:04"
+
+  - name: "pipe() deadlock"
+    start: "20:36"
+
+  - name: "Example: moving files"
+    start: "22:23"
+
+  - name: "Deadlock with memory"
+    start: "26:18"
+
+  - name: "Deadlock"
+    start: "26:57"
+
+  - name: "Deadlock vs Starvation"
+    start: "28:35"
+
+  - name: "Deadlock requirements"
+    start: "29:50"
+
+  - name: "Exercise: How is deadlock possible?"
+    start: "31:41"
+
+  - name: "Deadlock prevention techniques"
+    start: "39:44"
+
+  - name: "Abort and retry; Livelock"
+    start: "44:39"
+
+  - name: "Preventing Livelock"
+    start: "47:42"
+
+  - name: "Acquiring locks in a consistent order"
+    start: "49:08"
+
+  - name: "Request all resources at once"
+    start: "55:46"
+
+  - name: "Deadlock detection"
+    start: "57:01"
+
+  - name: "Using deadlock detection for prevention"
+    start: "01:07:59"
+
+  - name: "Beyond threads: Event-based programming"
+    start: "01:09:15"
+    stop: "01:14:48"
