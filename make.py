@@ -11,10 +11,12 @@ def print_t(tab_level,*args,**kwargs):
 	print(*args,**kwargs)
 
 def print_video_tag(src,start,stop,file=sys.stdout):
-	print_t(2,"<video controls>",file=file)
-	print_t(3,'<source src="%s#t=%s,%s"' % (src,str(start),str(stop)),file=file)
-	print_t(3,"type='video/webm;codecs=\"vp8, vorbis\"'/>",file=file)
-	print_t(2,"</video>",file=file)
+    src = "%s#t=%s,%s" % (src,str(start),str(stop))
+    print_t(2,"<div class='vid-placeholder' url='%s' style='display: none;'></div>" % src,file=file)
+    # print_t(2,"<video controls src='%s'>" % src,file=file)
+	# print_t(3,'<source src="%s#t=%s,%s"' ,file=file)
+	# print_t(3,"type='video/webm;codecs=\"vp8, vorbis\"'/>",file=file)
+    # print_t(2,"</video>",file=file)
 
 def print_intro(file=sys.stdout):
 	print_t(0,"<!DOCTYPE html>",file=file)
@@ -35,7 +37,7 @@ def get_markdown_html(filepath):
 	with open(filepath) as y:
 		md = y.read()
 	return markdown.markdown(md)
-	
+
 
 obj = get_attrs()
 src = obj["url"]
@@ -75,7 +77,6 @@ for i in range(len(segments)):
 		print_t(2,"</div>",file=file)
 
 
-	print_t(2,"<h2 class='go-back'>Go Back</h2>",file=file)
 	print_t(1,'</div> <!-- vid -->',file=file)
 
 
@@ -85,4 +86,3 @@ file.close()
 
 if "-o" in sys.argv:
 	os.system("open " + output_path)
-

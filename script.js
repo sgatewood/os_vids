@@ -10,7 +10,7 @@ function toggle(el,attr){
 
 $(function(){
 
-	$("video").hide();
+	// $("video").hide();
 	$(".go-back").hide();
 	$(".vid hr").hide();
 	$(".vid br").hide();
@@ -20,8 +20,17 @@ $(function(){
 	$(".vid").click(function(){
 		if(!$(this).attr("toggled")){
 			toggle($(this),"toggled");
-			var video = $(this).children("video");
-			video.toggle();
+
+      if($(this).children("video").length == 0){
+        var placeholder = $(this).children(".vid-placeholder")
+        var src = placeholder.attr("url");
+        var video = $('<video controls><source src="' + src + '" type=\'video/webm;codecs="vp8, vorbis"\'/></video>')
+        placeholder.before(video);
+      }else{
+        var video = $(this).children("video");
+  			video.toggle();
+      }
+    
 			$(this).children(".go-back").toggle();
 			$(this).children("hr").toggle();
 			$(this).children("br").toggle();

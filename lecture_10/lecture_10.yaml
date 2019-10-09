@@ -3,7 +3,51 @@ segments:
 
   - name: "Monitors/Condition Variables"
     start: "40:03"
-    notes: "monitors_condition_vars.txt"
+    notes: "monitors_condition_vars.md"
+
+  - name: "Pthreads API vs Object Oriented Languages"
+    start: "41:02"
+
+  - name: "Monitor idea"
+    start: "41:46"
+
+  - name: "Condvar Operations"
+    start: "42:58"
+
+  - name: "pthread cv usage"
+    start: "45:58"
+
+  - name: "WaitForFinish timeline 1"
+    start: "48:27"
+
+  - name: "WaitForFinish timeline 2"
+    start: "49:45"
+
+  - name: "Why the loop?"
+    start: "50:13"
+
+  - name: ""
+    start: "50:53"
+
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
 
   - name: "End-buffer"
     start: "01:16:00"
