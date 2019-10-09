@@ -1,3 +1,4 @@
+name: "Lecture 10"
 url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20190926-video-and-audio.webm"
 segments:
 
@@ -26,28 +27,30 @@ segments:
   - name: "Why the loop?"
     start: "50:13"
 
-  - name: ""
-    start: "50:53"
+  - name: "Unbounded buffer producer/consumer"
+    start: "51:53"
 
+  - name: "Timeline for producer/consumer: 0 iterations"
+    start: "56:53"
 
-  # - name: ""
-  #   start: ""
+  - name: "Timelixne for producer/consumer: 1 iteration"
+    start: "57:40"
 
-  # - name: ""
-  #   start: ""
+  - name: "Timelixne for producer/consumer: 2+ iterations"
+    start: "58:18"
 
-  # - name: ""
-  #   start: ""
+  - name: "Hoare vs Mesa monitors"
+    start: "01:00:26"
 
-  # - name: ""
-  #   start: ""
+  - name: "Bounded buffer producer/consumer"
+    start: "01:04:01"
 
+  - name: "Monitor pattern"
+    start: "01:08:12"
 
-  # - name: ""
-  #   start: ""
+  - name: "Monitors rules of thumb"
+    start: "01:09:56"
 
-  # - name: ""
-  #   start: ""
-
-  - name: "End-buffer"
-    start: "01:16:00"
+  - name: "Monitor exercise"
+    start: "01:13:18"
+    stop: "01:16:00"

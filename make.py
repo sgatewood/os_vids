@@ -41,12 +41,15 @@ def get_markdown_html(filepath):
 
 obj = get_attrs()
 src = obj["url"]
+name = obj["name"]
+
 
 # file = sys.stdout
 output_path = path + "/" + path + ".html"
 file = open(output_path,"w")
 
 print_intro(file=file)
+print_t(1,"<h1 id='name'>%s</h1>" % name,file=file)
 
 segments = obj["segments"]
 for i in range(len(segments)):

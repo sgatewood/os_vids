@@ -14,8 +14,7 @@ $(function(){
 	$(".go-back").hide();
 	$(".vid hr").hide();
 	$(".vid br").hide();
-	$(".notes").hide();
-
+  $(".notes").hide();
 
 	$(".vid").click(function(){
 		if(!$(this).attr("toggled")){
@@ -30,7 +29,8 @@ $(function(){
         var video = $(this).children("video");
   			video.toggle();
       }
-    
+
+      $("#name").toggle();
 			$(this).children(".go-back").toggle();
 			$(this).children("hr").toggle();
 			$(this).children("br").toggle();
@@ -59,6 +59,7 @@ $(function(){
 		toggle(parent,"toggled");
 		var video = parent.children("video");
 		video.toggle();
+    $("#name").toggle();
 		parent.children(".go-back").toggle();
 		parent.children("hr").toggle();
 		parent.children("br").toggle();
