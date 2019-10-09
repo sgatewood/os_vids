@@ -1,0 +1,39 @@
+name: "Lecture 11"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191001-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "Monitor exercise: Consume 2"
+    start: "02:26"
+
+  - name: "Monitor exercise 2: Implementing a barrier"
+    start: "05:04"
+
+  - name: "Mutex / CV init / destroy"
+    start: "14:55"
+
+  - name: "Semaphores"
+    start: "15:28"
+
+  - name: "Semaphores vs ints"
+    start: "17:44"
+
+  - name: "Semaphore example: reserving books"
+    start: "18:50"
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: "dummy"
+  #   start: "99:00:00"
