@@ -23,17 +23,58 @@ segments:
   - name: "Semaphore example: reserving books"
     start: "18:50"
 
-  # - name: ""
-  #   start: ""
+  - name: "Implementing Mutexes with Semaphores"
+    start: "21:54"
 
-  # - name: ""
-  #   start: ""
+  - name: "Implementing join with semaphores"
+    start: "24:57"
 
-  # - name: ""
-  #   start: ""
+  - name: "POSIX semaphores"
+    start: "26:42"
 
-  # - name: ""
-  #   start: ""
+  - name: "Semaphore exercise"
+    start: "28:14"
 
-  # - name: "dummy"
-  #   start: "99:00:00"
+  - name: "Semaphore intuition"
+    start: "35:00"
+
+  - name: "Producer / Consumer with semaphores"
+    start: "36:03"
+
+  - name: "Binary Semaphores"
+    start: "45:29"
+
+  - name: "Gate intuition/pattern"
+    start: "50:46"
+
+  - name: "Anderson-Dahlin and semaphores"
+    start: "51:30"
+
+  - name: "Proving the equality of semaphores and monitors"
+    start: "53:16"
+
+  - name: "Building semaphores with Monitors"
+    start: "53:35"
+
+  - name: "Monitors with semaphores"
+    start: "01:03:28"
+
+  - name: "Reader / Writer Locks"
+    start: "01:04:55"
+
+  - name: "pthread rwlocks"
+    start: "01:05:36"
+
+  - name: "rwlocks with monitors"
+    start: "01:05:45"
+
+  - name: "reader / writer priority"
+    start: "01:09:03"
+
+  - name: "Writer priority"
+    start: "01:11:20"
+
+  - name: "Reader priority"
+    start: "01:12:57"
+    stop: "01:14:51"
+  #   start: ""
