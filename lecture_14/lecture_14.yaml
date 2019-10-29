@@ -1,0 +1,54 @@
+name: "Virtual Memory 2: page table tricks"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191015-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "x86-32 page table entry vs addresses (ORing the flag bits)"
+    start: "06:24"
+
+  - name: "xv6: Constructing Page tables"
+    start: "07:13"
+
+  - name: "xv6: Using the page table macros"
+    start: "07:59"
+
+  - name: "xv6: Page table utility functions"
+    start: "10:56"
+
+  - name: "kalloc/free"
+    start: "11:17"
+
+  - name: "walkpgdir and mappages"
+    start: "11:46"
+
+  - name: "accockvm, allocuvm, deallocuvm"
+    start: "12:38"
+
+  - name: "xv6: Finding page table entries (walkpgdir)"
+    start: "15:32"
+
+  - name: "mappages"
+    start: "24:17"
+
+  - name: "setting process page tables (break this up)"
+    start: "27:08"
+
+  - name: "xv6: Page faults"
+    start: "40:51"
+
+  - name: "exercise"
+    start: "49:00"
+
+  - name: "Allocation on demand really"
+    start: "58:52"
+
+  - name: "xv6: Adding space on demand, vs real OSes"
+    start: "01:00:10"
+
+  - name: "Fast copies (copy-on-write)"
+    start: "01:00:57"
+
+  - name: "exercise"
+    start: "01:07:19"
