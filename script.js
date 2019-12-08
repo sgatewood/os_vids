@@ -54,11 +54,12 @@ $(function(){
 	});
 
 	$(".go-back").click(function(event){
-		event.stopPropagation();
-		var parent = $(this).parent();
-		toggle(parent,"toggled");
-		var video = parent.children("video");
-		video.toggle();
+		location.reload();
+		// event.stopPropagation();
+		// var parent = $(this).parent();
+		// toggle(parent,"toggled");
+		// var video = parent.children("video");
+		// video.toggle();
     $("#name").toggle();
 		parent.children(".go-back").toggle();
 		parent.children("hr").toggle();

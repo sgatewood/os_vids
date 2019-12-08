@@ -1,0 +1,78 @@
+name: "Distributed Systems 2: RPC / Failure"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191119-video-and-audio.webm"
+segments:
+
+  - name: "Finishing RPCs"
+    start: ""
+
+  - name: "Marshalling / IDL"
+    start: "01:36"
+
+  - name: "IDL + marshalling example"
+    start: "06:49"
+
+  - name: "GRPC"
+    start: "08:56"
+
+  - name: "RPC server implementation"
+    start: "13:18"
+
+  - name: "RPC Client implementation"
+    start: "20:26"
+
+  - name: "RPC non-transparency"
+    start: "24:31"
+
+  - name: "RPC Performance"
+    start: "30:45"
+
+  - name: "RPC Locally"
+    start: "32:10"
+
+  - name: "Network failure"
+    start: "33:07"
+
+  - name: "Machine failure"
+    start: "40:03"
+
+  - name: "Distributed transaction problem"
+    start: "43:43"
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""

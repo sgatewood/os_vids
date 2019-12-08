@@ -1,0 +1,93 @@
+name: "Sockets / Distributed Systems 1"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191114-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "Mounting Filesystems" 
+    start: "05:43"
+
+  - name: "Kernel FS abstractions" 
+    start: "09:14"
+
+  - name: "Distributed systems"
+    start: "10:43"  
+
+  - name: "Client-server model"
+    start: "12:00"
+
+  - name: "Peer-to-peer model"
+    start: "15:40"
+
+  - name: "Why Distributed systems?"
+    start: "16:15"
+
+  - name: "Communication / Mailbox model"
+    start: "20:11"
+
+  - name: "What about servers? / Connections"
+    start: "22:21"
+
+  - name: "Connections vs pipes"
+    start: "26:50"  
+
+  - name: "Connections over mailboxes"
+    start: "27:41"
+
+  - name: "Connection missing pieces / names and addresses"
+    start: "28:40"
+
+  - name: "hostnames / DNS"
+    start: "32:37"
+
+  - name: "IPv4 addresses"
+    start: "35:57"
+
+  - name: "IPv6 addresses"
+    start: "40:12"
+
+  - name: "Port numbers"
+    start: "41:54"
+
+  - name: "Protocols"
+    start: "43:35"
+
+  - name: "Sockets"
+    start: "46:41"
+
+  - name: "Connections in TCP/IP"
+    start: "50:28"
+
+  - name: "Client/server flow"
+    start: "52:57"
+
+  - name: "Local sockets"
+    start: "01:03:47"
+
+  - name: "Remote procedure calls (RPCs)"
+    start: "01:06:57"
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""

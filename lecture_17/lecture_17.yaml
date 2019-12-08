@@ -1,0 +1,72 @@
+name: "I/O 1 / Filesystems 1"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191031-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "Device/File operations"
+    start: "06:06"
+
+  - name: "Device Driver flow"
+    start: "11:04"
+
+  - name: "xv6: Device files"
+    start: "15:06"
+
+  - name: "xv6: Reading/top half"
+    start: "17:11"
+
+  - name: "xv6: Bottom half"
+    start: "22:14"
+
+  - name: "Connecting Devices"
+    start: "23:50"
+
+  - name: "Devices as magic memory"
+    start: "28:32"
+
+  - name: "What about Caching?"
+    start: "32:36"
+
+  - name: "Aside: I/O Space"
+    start: "33:55"
+
+  - name: "xv6 keyboard access"
+    start: "35:40"
+
+  - name: "Programmed I/O; Direct Memory Access (DMA)"
+    start: "37:42"
+
+  - name: "OS puts things where it wants"
+    start: "43:03"
+
+  - name: "Exercise"
+    start: "47:02"
+
+  - name: "IO MMUs"
+    start: "53:11"
+
+  - name: "Devices Summary"
+    start: "55:45"
+
+  - name: "Filesystems"
+    start: "58:57"
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""

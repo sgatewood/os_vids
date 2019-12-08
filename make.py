@@ -3,6 +3,8 @@ import os,sys
 
 path = sys.argv[1]
 
+print("Making " + path)
+
 def get_attrs():
     return yaml.safe_load(open(path + "/" + path + ".yaml"))
 

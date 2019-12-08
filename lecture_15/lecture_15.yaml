@@ -1,0 +1,66 @@
+name: ""
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191024-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "Copy-on-Write cases"
+    start: "04:31"
+
+  - name: "mmap"
+    start: "06:27"
+
+  - name: "Mapped pages (Read only)"
+    start: "13:08"
+
+  - name: "Shared mmap"
+    start: "16:17"
+
+  - name: "Private mappings"
+    start: "18:39"
+
+  - name: "Mapped pages (no backing file)"
+    start: "22:13"
+
+  - name: "Swapping with Copy-on-Write"
+    start: "24:42"
+
+  - name: "Swapping and Memory (Split this up)"
+    start: "26:06"
+
+  - name: "Memory as a cache for disk"
+    start: "31:33"
+
+  - name: "Page cache components"
+    start: "33:21"
+
+  - name: "Linux: forward mapping"
+    start: "35:18"
+
+  - name: "Linux: Tracking files in memory"
+    start: "39:16"
+
+  - name: "Tracking locations on disk?"
+    start: "39:49"
+
+  - name: "Finding free pages"
+    start: "42:00"
+
+  - name: "Page replacement"
+    start: "48:02"
+
+  - name: "Page replacement goals"
+    start: "49:14"
+
+  - name: "Maximizing hit rate / Belady's MIN"
+    start: "51:22"
+
+  - name: "Predicting the future: the working set model (break up)"
+    start: "55:55"
+
+  - name: "LRU implementation"
+    start: "01:04:09"
+
+  - name: "Practical implementation"
+    start: "01:05:58"

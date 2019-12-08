@@ -1,0 +1,102 @@
+name: "Distributed Systems 3: Failure / Network filesystem"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "2-phase commit: Normal operation"
+    start: "04:10"
+
+  - name: "Some failure cases / Assignment (split this up)"
+    start: "07:31"
+
+  - name: "extending voting / quorums (split this up)"
+    start: "26:22"
+
+  - name: "Network filesystems"
+    start: "38:01"
+
+  - name: "NFSv2 (break this up)"
+    start: "41:42"
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+   # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""

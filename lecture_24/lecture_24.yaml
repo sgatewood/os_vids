@@ -1,0 +1,87 @@
+name: "Access Control"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191126-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "Authorization / User IDs"
+    start: "03:31"
+
+  - name: "Posix User IDs and Groups"
+    start: "07:15"
+
+  - name: "File permissions"
+    start: "15:08"
+
+  - name: "Access Control Lists / Superuser"
+    start: "18:02"
+
+  - name: "Logging in / Sudo / Setuid programs"
+    start: "25:13"
+
+  - name: "Capabilities"
+    start: "57:38"
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""

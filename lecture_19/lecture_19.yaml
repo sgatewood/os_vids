@@ -1,0 +1,45 @@
+name: "Filesystems 3"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191107-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "xv6 filesystem"
+    start: "04:15"
+
+  - name: "Direct and indirect blocks"
+    start: "07:43"
+
+  - name: "ext2 filesystem"
+    start: "15:00" 
+
+  - name: "Exercise" 
+    start: "21:19"
+
+  - name: "Sparse files"
+    start: "30:39"
+
+  - name: "Hard links"
+    start: "33:40"
+
+  - name: "xv6 FS pros vs FAT"
+    start: "38:06"
+
+  - name: "Exercise"
+    start: "38:59"
+
+  - name: "xv6 filesystem performance issues"
+    start: "46:54"
+
+  - name: "Fast Filesystem"
+    start: "48:23"
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""

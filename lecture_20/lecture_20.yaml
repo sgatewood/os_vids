@@ -1,0 +1,78 @@
+name: "Filesystems 3"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191112-video-and-audio.webm"
+segments:
+
+  - name: "Filesystems 4"
+    start: ""
+
+  - name: "Filesystem reliability / Hard drive atomicity"
+    start: "10:32"
+
+  - name: "Reliability issues"
+    start: "12:04"
+
+  - name: "Recall: FAT file creation / exercise in fat ordering"
+    start: "12:55"
+
+  - name: "Exercise 2: xv6 FS ordering"
+    start: "30:05"
+
+  - name: "Recovery with careful ordering"
+    start: "33:45"
+
+  - name: "Exercise: Unlink"
+    start: "37:04"
+
+  - name: "fsck / Ordering and disk performance"
+    start: "43:19"
+
+  - name: "Beyond ordering: transactions / redo logging"
+    start: "44:52"
+
+  - name: "The xv6 journal"
+    start: "57:36"
+
+  - name: "What is a transaction? / Redo logging performance"
+    start: "01:01:27"
+
+  - name: "Degrees of consistency"
+    start: "01:04:06"
+
+  - name: "Multiple copies: Mirroring disks"
+    start: "01:06:03"
+
+  - name: "Snapshots"
+    start: "01:10:41"
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""

@@ -1,0 +1,87 @@
+name: "Virtual Machines"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "Virtual Machines"
+    start: "05:12"
+
+  - name: "Imitate: How close?"
+    start: "08:37"
+
+  - name: "Multiple techniques"
+    start: "10:44"
+
+  - name: "VM Layering"
+    start: "12:00"
+
+  - name: "Virtual machine execution pieces"
+    start: "17:23"
+
+  - name: "Trap and Emulate"
+    start: "18:13"
+
+  - name: ""
+    start: "32:41"
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""

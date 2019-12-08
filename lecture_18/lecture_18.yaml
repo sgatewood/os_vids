@@ -1,0 +1,78 @@
+name: "Filesystems 2"
+url: "https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm"
+segments:
+
+  - name: "Intro / Flashback"
+    start: ""
+
+  - name: "Directory entries"
+    start: "04:23"
+
+  - name: "FAT directory entries in C"
+    start: "08:21"
+
+  - name: "Nested directories"
+    start: "13:23"
+
+  - name: "FAT: Creating a file"
+    start: "19:18"
+
+  - name: "FAT: Deleting files"
+    start: "24:20"
+
+  - name: "Exercise"
+    start: "24:55"
+
+  - name: "FAT pros and cons / Hard Drives"
+    start: "34:00"
+
+  - name: "Disk Scheduling"
+    start: "49:19"
+
+  - name: "Caching in the Controller"
+    start: "56:08"
+
+  - name: "Disk performance and filesystems"
+    start: "57:44"
+
+  - name: "SSD's"
+    start: "58:55"
+
+  - name: "Block remapping"
+    start: "01:02:42"
+
+    # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+    # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
+
+  # - name: ""
+  #   start: ""
