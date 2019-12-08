@@ -16,8 +16,19 @@ $(function(){
 	$(".vid br").hide();
   $(".notes").hide();
 
+  var colors = ["#9ccdea","#f5a3a3","#f9f995","#9cff9c","#fbc4fb","#FFCD81"];
+
+  $(".vid").each(function(){
+    var tabs = parseInt($(this).attr("tab"));
+    $(this).css("background-color",colors[tabs % colors.length])
+    tabs *= 40;
+    $(this).css("margin-left",tabs + "px")
+    console.log(tabs + "px");
+  });
+
 	$(".vid").click(function(){
 		if(!$(this).attr("toggled")){
+      $(this).css("margin-left","")
 			toggle($(this),"toggled");
 
       if($(this).children("video").length == 0){

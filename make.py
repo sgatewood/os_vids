@@ -108,8 +108,10 @@ for i in range(len(segments)):
     if stop == "":
         stop = "99:00:00"
 
+    tab = segment.get("tab",0)
 
-    print_t(1,'<div class="vid">',file=file)
+
+    print_t(1,'<div class="vid" tab="%d">' % tab,file=file)
     print_t(2,"<h1>%s (%s)</h1>" % (segment["name"],time_difference(start,stop)),file=file)
     print_t(2,"<h2 class='go-back'>Go Back</h2>",file=file)
 
