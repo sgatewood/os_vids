@@ -80,3 +80,7 @@ video {
 div.ui-slider-range.ui-widget-header {
     background: green;
 }
+
+a.done{
+  color: red;
+}

@@ -20,11 +20,11 @@ segments:
 
   - name: "Client-server model"
     start: "12:00"
-    tab: 0
+    tab: 1
 
   - name: "Peer-to-peer model"
     start: "15:40"
-    tab: 0
+    tab: 1
 
   - name: "Why Distributed systems?"
     start: "16:15"
@@ -34,45 +34,53 @@ segments:
     start: "20:11"
     tab: 0
 
-  - name: "What about servers? / Connections"
+  - name: "What about Replying? Sending Multiple Messages?"
     start: "22:21"
     tab: 0
 
+  - name: "Connections"
+    start: "25:23"
+    tab: 1
+
   - name: "Connections vs pipes"
     start: "26:50"
-    tab: 0
+    tab: 1
 
   - name: "Connections over mailboxes"
     start: "27:41"
-    tab: 0
+    tab: 1
 
-  - name: "Connection missing pieces / names and addresses"
+  - name: "Names and addresses"
     start: "28:40"
     tab: 0
 
   - name: "hostnames / DNS"
     start: "32:37"
-    tab: 0
+    tab: 1
 
   - name: "IPv4 addresses"
     start: "35:57"
-    tab: 0
+    tab: 1
 
   - name: "IPv6 addresses"
     start: "40:12"
-    tab: 0
+    tab: 1
 
   - name: "Port numbers"
     start: "41:54"
-    tab: 0
+    tab: 1
 
-  - name: "Protocols"
+  - name: "Protocols (How to communicate)"
     start: "43:35"
     tab: 0
 
   - name: "Sockets"
     start: "46:41"
     tab: 0
+
+  - name: "Connecting to sockets / Server sockets"
+    start: "48:09"
+    tab: 1
 
   - name: "Connections in TCP/IP"
     start: "50:28"
@@ -82,6 +90,26 @@ segments:
     start: "52:57"
     tab: 0
 
+  - name: "Connection setup: Client"
+    start: "54:21"
+    tab: 1
+
+  - name: "Connection setup: Server"
+    start: "56:58"
+    tab: 1
+
+  - name: "Aside: on server port numbers"
+    start: "58:12"
+    tab: 1
+
+  - name: "Handling multiple connections"
+    start: "59:29"
+    tab: 1
+
+  - name: "Reading and writing at once"
+    start: "01:01:56"
+    tab: 1
+
   - name: "Local sockets"
     start: "01:03:47"
     tab: 0
@@ -90,8 +118,18 @@ segments:
     start: "01:06:57"
     tab: 0
 
-#   - name: ""
-#     start: ""
+  - name: "How we do this: Stubs"
+    start: "01:08:42"
+    tab: 1
+
+  - name: "Typical RPC data flow"
+    start: "01:11:10"
+    tab: 1
+
+  # - name: "END"
+  #   start: "01:14:43"
+  #   stop: "01:14:43"
+  #   tab: 0
 
 #   - name: ""
 #     start: ""
@@ -120,3 +158,5 @@ segments:
 #   - name: ""
 #     start: ""
 
+#   - name: ""
+#     start: ""
