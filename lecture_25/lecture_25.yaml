@@ -30,9 +30,20 @@ segments:
     tab: 0
     notes: "notes4.md"
 
-  - name: "wip"
+  - name: "Pretend Modes"
     start: "12:34"
     tab: 1
+    notes: "notes5.md"
+
+  - name: "Keeping track of stuff"
+    start: "13:15"
+    tab: 1
+    notes: "notes6.md"
+
+  - name: "Basic Hypervisor Flow"
+    start: "14:51"
+    tab: 1
+    notes: "notes7.md"
 
   - name: "Virtual machine execution pieces"
     start: "17:23"

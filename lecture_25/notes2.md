@@ -1,6 +1,6 @@
 # Imitate: How close?
 - **Full Virtualization**
-  - Guest OS unmodified
+    - Guest OS unmodified
 - **Paravirtualization**
-  - Small changes to guest OS
+    - Small changes to guest OS
 - Fuzzy line

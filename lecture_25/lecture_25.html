@@ -27,10 +27,12 @@
 <ul>
 <li><strong>System</strong> Virtual Machines</li>
 <li>Goal: <strong>Imitate hardware</strong></li>
-<li>What hardware?</li>
+<li>What hardware?<ul>
 <li>Whatever's easiest</li>
+</ul>
+</li>
 <li>Running <strong>Operating Systems</strong></li>
-<li>Terms</li>
+<li>Terms<ul>
 <li><strong>Hypervisor</strong> (or "VM Monitor")<ul>
 <li>e.g. Virtualbox</li>
 <li>Sometimes a part of host OS</li>
@@ -46,8 +48,12 @@
 <li>Sometimes Host OS = Hypervisor</li>
 </ul>
 </li>
-<li>We'll assume Hypervisor = Host OS</li>
+</ul>
+</li>
+<li>We'll assume Hypervisor = Host OS<ul>
 <li>e.g. Hypervisor will have exception handlers</li>
+</ul>
+</li>
 </ul>
 <p><a href="notes2.md">Next</a></p>
 		</div>
@@ -61,10 +67,14 @@
 		<div class='notes'>
 <h1>Imitate: How close?</h1>
 <ul>
-<li><strong>Full Virtualization</strong></li>
+<li><strong>Full Virtualization</strong><ul>
 <li>Guest OS unmodified</li>
-<li><strong>Paravirtualization</strong></li>
+</ul>
+</li>
+<li><strong>Paravirtualization</strong><ul>
 <li>Small changes to guest OS</li>
+</ul>
+</li>
 <li>Fuzzy line</li>
 </ul>
 		</div>
@@ -79,8 +89,10 @@
 <h1>Other techniques</h1>
 <ol>
 <li>Extra HW support for VMS</li>
-<li>Compile guest OS' machine code to new machine code</li>
+<li>Compile guest OS' machine code to new machine code<ul>
 <li>Not as slow as you might think</li>
+</ul>
+</li>
 </ol>
 		</div>
 		</div>
@@ -94,16 +106,75 @@
 <h1>VM Layering</h1>
 <ul>
 <li>Run <strong>Hypervisor</strong> in <strong>Kernel</strong> mode</li>
-<li>Run <strong>Guest OS</strong> in <strong>User</strong> mode</li>
+<li>Run <strong>Guest OS</strong> in <strong>User</strong> mode<ul>
 <li>Can think of Guest OS as Hypervisor's "process"</li>
+</ul>
+</li>
 </ul>
 		</div>
 		</div>
 	</div> <!-- vid -->
 	<div class="vid" tab="1" done="false">
-		<h1>wip (04:49)</h1>
+		<h1>Pretend Modes (00:41)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=12:34,17:23' duration='289' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=12:34,13:15' duration='41' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Pretend Modes</h1>
+<ul>
+<li><strong>Pretend User mode</strong> and <strong>Pretend kernel mode</strong> for guest OS<ul>
+<li>Needs to run stuff in Kernel mode</li>
+<li>But whole thing in user mode</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Keeping track of stuff (01:36)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=13:15,14:51' duration='96' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Keeping Track of stuff</h1>
+<ul>
+<li>Hypervisor keeps track of regular process stuff<ul>
+<li>Some extras tho<ul>
+<li>Whether in User/kernel mode</li>
+<li>Page table ptr of guest OS (HARD)</li>
+<li>Exception table ptr</li>
+<li>Whether interrupts are disabled<ul>
+<li>(whether we're pretending they are or not)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Guest OS runs like a process, with extra state to keep track of</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Basic Hypervisor Flow (02:32)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=14:51,17:23' duration='152' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>How do we make it look like it's on real HW?</h1>
+<ul>
+<li>Run it normally until it stops (exceptions)</li>
+<li>Hypervisor simulates what processor would "normally" do<ul>
+<li>e.g. Screen system call: talks to screen on your behalf</li>
+<li>e.g. fault to disable interrupts: Store that you disabled interrupts</li>
+<li>e.g. System call: Run Guest OS' system call handler</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
 		<h1>Virtual machine execution pieces (00:50)</h1>
