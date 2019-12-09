@@ -1,0 +1,11 @@
+# Hardware Hypervisor support (not on exam)
+- Common in modern processors
+- Benefits:
+    - Lets processor be in kernel mode but still switch to VM monitor when something important happens
+        - Processor will track User/Kernel mode PTEs for you (don't need separate shadow PT's for these)
+    - Lets you configure when to run hypervisor
+        - HW can run guest handlers, and specify which things go to hypervisor
+    - Nested page table support
+        - HW will do 2 page table lookups itself (to help with Virtual Machines)
+        - Even tho this is super complicated in the HW
+- Why VMs are much faster today

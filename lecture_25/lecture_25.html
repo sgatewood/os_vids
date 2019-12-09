@@ -12,12 +12,12 @@
 </head>
 <body>
 	<h1 id='name'>Virtual Machines</h1>
-	<div class="vid" tab="0" done="true">
+	<div class="vid" tab="0" done="false">
 		<h1>Intro / Flashback (05:12)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=00:00:00,05:12' duration='312' style='display: none;'></div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0" done="true">
+	<div class="vid" tab="0" done="false">
 		<h1>Virtual Machines (03:24)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=05:12,08:36' duration='204' style='display: none;'></div>
@@ -59,7 +59,7 @@
 		</div>
 		</div>
 	</div> <!-- vid -->
-	<div class="vid" tab="1" done="true">
+	<div class="vid" tab="1" done="false">
 		<h1>Imitate: How close? (02:08)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=08:36,10:44' duration='128' style='display: none;'></div>
@@ -80,7 +80,7 @@
 		</div>
 		</div>
 	</div> <!-- vid -->
-	<div class="vid" tab="1" done="true">
+	<div class="vid" tab="1" done="false">
 		<h1>Other techniques (01:16)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=10:44,12:00' duration='76' style='display: none;'></div>
@@ -180,16 +180,564 @@
 		<h1>Virtual machine execution pieces (00:50)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=17:23,18:13' duration='50' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Virtal Machine execution pieces</h1>
+<ol>
+<li>Making <strong>IO and kernel-mode related instructions</strong> work<ul>
+<li><strong>Trap and emulate</strong></li>
+<li>Force instruction to cause fault</li>
+<li>Make fault handler do what HW would do</li>
+<li>might require reading machine code to emulate instruction</li>
+</ul>
+</li>
+<li>Making <strong>exceptions/interrupts</strong> work<ul>
+<li>"reflect" exceptions/interrupts into guest OS</li>
+</ul>
+</li>
+<li>Making <strong>page tables</strong> work<ul>
+<li>Whole thing</li>
+</ul>
+</li>
+</ol>
+		</div>
+		</div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0" done="false">
-		<h1>Trap and Emulate (14:28)</h1>
+	<div class="vid" tab="1" done="false">
+		<h1>Trap and Emulate (00:56)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=18:13,32:41' duration='868' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=18:13,19:09' duration='56' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Trap and emulate</h1>
+<ul>
+<li>Normally: Privileged instrs trigger fault</li>
+<li>Normal OS: crash the program</li>
+<li>Instead: Hypervisor pretends it did the right thing<ul>
+<li>We'll do the privileged thing on your behalf</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0" done="false">
-		<h1>The rest... (42:49)</h1>
+	<div class="vid" tab="2" done="false">
+		<h1>Privileged I/O flow (00:59)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=32:41,01:15:30' duration='2569' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=19:09,20:08' duration='59' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Privileged I/O flow</h1>
+<ol>
+<li>Guest OS tries to access device<ul>
+<li>Not allowed: Guest OS in user mode</li>
+</ul>
+</li>
+<li>Protection fault triggered</li>
+<li>Handler in hypervisor<ul>
+<li>"Oh you were trying to get keyboard input"</li>
+<li>talk to device for you</li>
+<li>Update guest OS w/ any results</li>
+<li>Switch back</li>
+</ul>
+</li>
+</ol>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>What this looks like (pseudocode) (05:04)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=20:08,25:12' duration='304' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>How this looks</h1>
+<ul>
+<li>Handler actually looks at the faulting instruction</li>
+<li>Also check what mode it thinks it's in</li>
+<li>Straightforward but tedious<ul>
+<li>Why I/O isn't super fast in VMs</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>What if we're in pretend user mode? (02:00)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=25:12,27:12' duration='120' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>What if we're in pretend user mode?</h1>
+<p><strong>Read from keyboard</strong></p>
+<ul>
+<li>If in pretend <strong>kernel</strong> mode: Do the actual privileged instruction</li>
+<li>If in pretend <strong>user</strong> mode: Invoke <strong>guest OS'</strong> exception handler (after switching to fake kernel mode, etc)<ul>
+<li>How nested VMs work</li>
+<li>(pass handling down the VM chain)</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>System calls (03:07)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=27:12,30:19' duration='187' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>System calls</h1>
+<ol>
+<li>Program in Guest OS makes <strong>system call</strong></li>
+<li>Invokes handler in <strong>hypervisor</strong></li>
+<li>Hypervisor <strong>forwards</strong> system call to the guest OS' system call handler<ul>
+<li>Also mark fake kernel mode, change PC, etc.</li>
+<li>Also have to update page table (more on this later)</li>
+</ul>
+</li>
+</ol>
+<h1>After system call</h1>
+<ul>
+<li><strong>Return from exception</strong> in guest OS' syscall handler<ul>
+<li>Privileged instruction --&gt; <strong>Protection fault</strong> cuz pretend kernel mode isn't real kernel mode</li>
+<li>hypervisor has to emulate the actual return to the user program</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>How this works for Memory-Mapped I/O (02:22)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=30:19,32:41' duration='142' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Applying this I/O to memory-mapped I/O</h1>
+<ul>
+<li>Emulating writing to a control register<ul>
+<li>Have to emulate every memory-writing instruction to make devices work</li>
+<li>(at least) 2 types of page faults for hypervisor:<ol>
+<li>Guest OS trying to access device memory (<strong>emulate the device</strong>)</li>
+<li>Guest OS trying to access memory not in its page table (run <strong>exception handler in guest OS</strong>)<ul>
+<li>Trigger page fault in guest OS</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><strong>tl;dr</strong>: Is it not mapped because it's a device, or because we don't have this mapping in the guest OS?</li>
+<li>Virtual mem on top of this? Extra cases (next)</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Exercise: How many exceptions? (02:37)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=32:41,35:18' duration='157' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Exceptions that occur:</h1>
+<ol>
+<li>System call</li>
+<li>Write 1</li>
+<li>Write 2</li>
+<li>Write 3</li>
+<li>Write 4</li>
+<li>
+<p>Return from system call</p>
+</li>
+<li>
+<p>More if page faults to bring in memory, etc</p>
+</li>
+</ol>
+<h1>Making this faster</h1>
+<ul>
+<li>Paravirtualization</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>This doesn't always work... (01:29)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=35:18,36:47' duration='89' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>This often doesn't actually work</h1>
+<ul>
+<li>Works on some architectures<ul>
+<li>Relies on all special instrs triggering fault</li>
+<li>Not all in x86<ul>
+<li>Some behave differently in User and kernel mode, but not just fault and no fault</li>
+</ul>
+</li>
+<li>Why original VMWare used to compile guest OS' machine code to other machine code</li>
+</ul>
+</li>
+<li>Modern x86 added some ISA extensions that solve this problem</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>What about virtual memory? (01:01)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=36:47,37:48' duration='61' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Things Virtual Memory needs</h1>
+<ul>
+<li>Change page table from user to kernel mode<ul>
+<li>Not automatic cuz actually all in user mode</li>
+</ul>
+</li>
+<li>Virtual memory most complicated part of virtualization<ul>
+<li>also source of slowdowns</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Terms (01:21)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=37:48,39:09' duration='81' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Terms</h1>
+<ul>
+<li><strong>Virtual address</strong>: Fake virtual addr for guest OS</li>
+<li><strong>Physical address</strong>: Fake physical addr for guest OS<ul>
+<li>Virtual address for hypervisor</li>
+</ul>
+</li>
+<li><strong>Machine address</strong>: Real physical address for hypervisor / host OS</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Three page tables (05:01)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=39:09,44:10' duration='301' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Three page tables</h1>
+<ol>
+<li><strong>Guest page table</strong><ul>
+<li>Hypervisor records where it is, etc<ul>
+<li>Privileged instruction sets base ptr</li>
+</ul>
+</li>
+<li>Translates virtual to physical</li>
+</ul>
+</li>
+<li><strong>Hypervisor page table?</strong><ul>
+<li>Translates physical to machine</li>
+<li>Might not really be a page table</li>
+<li>We do need to know this mapping thok</li>
+<li>Need to have a mapping<ul>
+<li>Where would you store hypervisor?</li>
+<li>What if you wanna run multiple VMs?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h1>But guest OS needs translation from virtual to machine directly</h1>
+<ol>
+<li>
+<p><strong>Shadow page table</strong></p>
+<ul>
+<li>Virtual to machine translation</li>
+<li>"Shadow" of guest page table</li>
+<li>Hypervisor constructs this from guest page table and its own page table</li>
+</ul>
+</li>
+<li>
+<p>Guest OS only knows about guest page table</p>
+</li>
+<li>Hardware only knows about shadow page table</li>
+</ol>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>Creating the shadow page table (07:44)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=44:10,51:54' duration='464' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Creating the shadow page table</h1>
+<ul>
+<li>Simple</li>
+<li>2 page table lookups:<ul>
+<li>guest PT lookup</li>
+<li>hypervisor ~PT lookup</li>
+</ul>
+</li>
+<li>Combine the two</li>
+</ul>
+<h1>When do we update the shadow page table?</h1>
+<ul>
+<li>Needs to be up to date</li>
+<li>What do you have to do when you update the page table?<ul>
+<li>Flush the TLB (Translation Lookaside Buffer)<ul>
+<li>A privileged instruction!</li>
+</ul>
+</li>
+<li>Processor actually uses TLB to do address translation w/ normal PT's<ul>
+<li>Same problem<ul>
+<li>Sythesized from a page table</li>
+<li>Gets out of date</li>
+<li>Needs to be told when to update</li>
+</ul>
+</li>
+<li>So can use same strategy<ul>
+<li>Manage the Shadow PT the same way the hardware manages the TLB</li>
+<li>Shadow page table is basically a "virtual TLB" (stored as a PT instead of a cache)</li>
+</ul>
+</li>
+<li><strong>Usual strategy</strong><ul>
+<li>Want addr translated</li>
+<li>actually go through TLB</li>
+<li>Fetch addr from PT if not in TLB (Fetch on demand)<ul>
+<li>Shadow PT: fetch on page fault</li>
+</ul>
+</li>
+<li>When PT is modified<ul>
+<li>OS invalidates TLB entry (or flush them all)</li>
+<li>This is the privileged instruction we'll take advantage of</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Our strategyk</strong><ul>
+<li>Guest OS edits guest PT<ul>
+<li>triggers instruction to flush TLB</li>
+<li>Hypervisor clears part of shadow page table (fill in later if page fault)</li>
+</ul>
+</li>
+<li>Guest page faults<ul>
+<li>Hypervisor automatically detches on demand if necessary (like how HW does this automatically)</li>
+<li>Hypervisor does conversion from 2 PTs</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>More on shadow page table<ul>
+<li>Caches commonly used PTEs in translated form</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>nit: memory-mapped I/O (00:45)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=51:54,52:39' duration='45' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>nit: memory-mapped I/O</h1>
+<ul>
+<li>If physical addr is for fake I/O device<ul>
+<li>Make shadow PTE invalid</li>
+<li>We want page fault for these to emulate access to the device</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Page tables and kernel mode? (02:41)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=52:39,55:20' duration='161' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Page tables and kernel mode</h1>
+<ul>
+<li>remember: Can mark pages as kernel-only</li>
+<li>Hypervisor needs to make this work</li>
+<li>If guest OS in <strong>pretend kernel mode</strong><ul>
+<li>Sjhadow PTE: marked as user-mode accessible (really in user mode)</li>
+</ul>
+</li>
+<li>If guest OS in <strong>pretend user mode</strong><ul>
+<li>Shadow PTE: marked inaccessible</li>
+</ul>
+</li>
+</ul>
+<h1>One solution: Two shadow page tables</h1>
+<ul>
+<li>One for pretend user mode</li>
+<li>One for pretend kernel mode</li>
+<li>Switch between them on exceptions etc</li>
+<li>Higher cost of emulation (switching page tables every time)</li>
+</ul>
+<h1>Alternate solution: clear PT on kernel/user switch</h1>
+<ul>
+<li>Also not great for overhead</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>Exercise (06:52)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=55:20,01:02:12' duration='412' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Guest PT switches</h1>
+<ol>
+<li>Switch to another program</li>
+<li>Switch back to original program</li>
+</ol>
+<h1>Shadow PT switches</h1>
+<ol>
+<li>read(): To kernel mode (assume it doesn't switch back yet)</li>
+<li>switch(): progA to progB</li>
+<li>switch(): Back to user mode</li>
+<li>keyboard(): To kernel mode (assume it doesn't switch back yet)</li>
+<li>switch(): progB to progA</li>
+<li>
+<p>switch(): Back to user mode</p>
+</li>
+<li>
+<p>32-bit x86: Every time you change PT ptr or invalide TLB, you gotta flush the <strong>whole</strong> TLB</p>
+<ul>
+<li>So, all this gets really expensive</li>
+</ul>
+</li>
+</ol>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>Tagged TLBs (01:39)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=01:02:12,01:03:51' duration='99' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Tagged TLBs</h1>
+<ul>
+<li>HW sometimes includes "address space ID" in TLB entries<ul>
+<li>kinda a process ID</li>
+</ul>
+</li>
+<li>Helpful for normal OSes<ul>
+<li>faster context switching</li>
+</ul>
+</li>
+<li>Super useful for hypervisor<ul>
+<li>Lots of switches</li>
+<li>less expensive per switch</li>
+</ul>
+</li>
+<li>not used by modern OSes until recently</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>Proactively filling page tables (06:52)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=01:03:51,01:10:43' duration='412' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>problem with filling on demand</h1>
+<ul>
+<li>Many OSes invalidate <strong>entire</strong> TLB on context switch<ul>
+<li>Especially without tagged TLBs</li>
+</ul>
+</li>
+<li>So, rebuild shadow PT on every OS context switch<ul>
+<li>Often unacceptably slow</li>
+<li>Want to cache shadow page tables</li>
+<li>problem: OS won't tell you when it's writing</li>
+</ul>
+</li>
+</ul>
+<h1>Solution: Shadow page table for multiple processes</h1>
+<ul>
+<li>Actually 2 for each one (kernel and user)</li>
+<li>Problem: What if guest OS modifies another process' page table (e.g. fork, copy on write, evicting pages)<ul>
+<li>Guest OS thinks TLB only stores current process<ul>
+<li>So won't tell the hypervisor of these changes</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Solution: Trap and emulate<ul>
+<li>Track what physical pages are part of PTs the guest OS knows about</li>
+<li>Mark them as read-only in shadow PTs</li>
+<li>When guest OS tries to modify, triggers protection fault</li>
+<li>Sounds really expensive, but cheaper than updating shadow PT every time</li>
+<li>Real VM monitors do this</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>Pros and cons (02:34)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=01:10:43,01:13:17' duration='154' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>proactive (trap and emulate) over on-demand</h1>
+<ul>
+<li>pro: works with guest OSes that make assumptions about TLB size</li>
+<li>pro: maintain shadow Pt for each guest process (avoids rebuilding on every context switch)</li>
+<li>pro: better fit with tagged TLBs</li>
+<li>con: more instructions spent doing copy-on-write</li>
+<li>con: What happens when PT memory recycled?</li>
+<li>con: Super complicated</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>wip (02:13)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=01:13:17,01:15:30' duration='133' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Hardware Hypervisor support (not on exam)</h1>
+<ul>
+<li>Common in modern processors</li>
+<li>Benefits:<ul>
+<li>Lets processor be in kernel mode but still switch to VM monitor when something important happens<ul>
+<li>Processor will track User/Kernel mode PTEs for you (don't need separate shadow PT's for these)</li>
+</ul>
+</li>
+<li>Lets you configure when to run hypervisor<ul>
+<li>HW can run guest handlers, and specify which things go to hypervisor</li>
+</ul>
+</li>
+<li>Nested page table support<ul>
+<li>HW will do 2 page table lookups itself (to help with Virtual Machines)</li>
+<li>Even tho this is super complicated in the HW</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Why VMs are much faster today</li>
+</ul>
+		</div>
+		</div>
 	</div> <!-- vid -->
 </body>
 </html>

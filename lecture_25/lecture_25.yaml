@@ -5,59 +5,158 @@ segments:
   - name: "Intro / Flashback"
     start: ""
     tab: 0
-    done: true
+    done: false
 
   - name: "Virtual Machines"
     start: "05:12"
     tab: 0
     notes: "notes1.md"
-    done: true
+    done: false
 
   - name: "Imitate: How close?"
     start: "08:36"
     tab: 1
     notes: "notes2.md"
-    done: true
+    done: false
 
   - name: "Other techniques"
     start: "10:44"
     tab: 1
     notes: "notes3.md"
-    done: true
+    done: false
 
   - name: "VM Layering"
     start: "12:00"
     tab: 0
     notes: "notes4.md"
+    done: false
 
   - name: "Pretend Modes"
     start: "12:34"
     tab: 1
     notes: "notes5.md"
+    done: false
 
   - name: "Keeping track of stuff"
     start: "13:15"
     tab: 1
     notes: "notes6.md"
+    done: false
 
   - name: "Basic Hypervisor Flow"
     start: "14:51"
     tab: 1
     notes: "notes7.md"
+    done: false
 
   - name: "Virtual machine execution pieces"
     start: "17:23"
     tab: 0
+    notes: "notes8.md"
+    done: false
 
   - name: "Trap and Emulate"
     start: "18:13"
-    tab: 0
+    tab: 1
+    notes: "notes9.md"
+    done: false
 
-  - name: "The rest..."
+  - name: "Privileged I/O flow"
+    start: "19:09"
+    tab: 2
+    notes: "notes10.md"
+    done: false
+
+  - name: "What this looks like (pseudocode)"
+    start: "20:08"
+    tab: 3
+    notes: "notes11.md"
+    done: false
+
+  - name: "What if we're in pretend user mode?"
+    start: "25:12"
+    tab: 1
+    notes: "notes12.md"
+    done: false
+
+  - name: "System calls"
+    start: "27:12"
+    tab: 2
+    notes: "notes13.md"
+    done: false
+
+  - name: "How this works for Memory-Mapped I/O"
+    start: "30:19"
+    tab: 1
+    notes: "notes14.md"
+    done: false
+
+  - name: "Exercise: How many exceptions?"
     start: "32:41"
-    stop: "01:15:30"
-    tab: 0
+    tab: 1
+    notes: "notes15.md"
 
+  - name: "This doesn't always work..."
+    start: "35:18"
+    tab: 1
+    notes: "notes16.md"
+
+  - name: "What about virtual memory?"
+    start: "36:47"
+    tab: 1
+    notes: "notes17.md"
+
+  - name: "Terms"
+    start: "37:48"
+    tab: 2
+    notes: "notes18.md"
+
+  - name: "Three page tables"
+    start: "39:09"
+    tab: 2
+    notes: "notes19.md"
+
+  - name: "Creating the shadow page table"
+    start: "44:10"
+    tab: 3
+    notes: "notes20.md"
+
+  - name: "nit: memory-mapped I/O"
+    start: "51:54"
+    tab: 2
+    notes: "notes21.md"
+
+  - name: "Page tables and kernel mode?"
+    start: "52:39"
+    tab: 2
+    notes: "notes22.md"
+
+  - name: "Exercise"
+    start: "55:20"
+    tab: 3
+    notes: "notes23.md"
+
+  - name: "Tagged TLBs"
+    start: "01:02:12"
+    tab: 3
+    notes: "notes24.md"
+
+  - name: "Proactively filling page tables"
+    start: "01:03:51"
+    tab: 3
+    notes: "notes25.md"
+
+  - name: "Pros and cons"
+    start: "01:10:43"
+    tab: 3
+    notes: "notes26.md"
+
+  - name: "wip"
+    start: "01:13:17"
+    stop: "01:15:30"
+    tab: 3
+    notes: "notes27.md"
+    
 #   - name: ""
 #     start: ""
 
