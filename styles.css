@@ -34,7 +34,7 @@ body{
 }
 
 video {
-	width: 70%;
+	width: 60%;
 	border: 8px solid black;
 }
 
@@ -55,6 +55,23 @@ video {
   background: grey;
 }
 
-#bar > div{
-  background: green;
+#bar{
+  margin-top: 30px;
+  height: 50px;
+
+}
+
+.ui-slider-handle{
+  display: none;
+}
+
+/* .ui-slider-range{ */
+  /* background:green; */
+  /* background-color:; */
+/* } */
+
+/* .ui-widget-header{background-image:none;background-color:#887e6d;} */
+
+div.ui-slider-range.ui-widget-header {
+    background: green;
 }

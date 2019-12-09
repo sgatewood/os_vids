@@ -58,17 +58,71 @@ $(function(){
       var duration = 0;
       var start = 0;
 
+      var video = null;
+
+      var normal_bar_change = function(e){
+        // console.log('bar')
+        // e.stopPropagation();
+        var val = $("#bar").slider("option", "value");
+        // console.log(start)
+        var n = Math.round(start + val);
+        // if(isnan(new)){
+        //   return;
+        // }
+        video.get(0).currentTime = n;
+        // console.log(video.get(0).currentTime)
+
+        // $("#bar").blur()
+        // alert(video.get(0).currentTime);
+      }
+
+      var normal_vid_change = function(e){
+        // console.log("vid")
+        // e.stopPropagation();
+        var time = Math.round(this.currentTime);
+        if(start == 0){
+          start = time;
+        }
+        var d = time - start
+        $("#bar").slider({value: d})
+        // $("#bar").slider({change:normal_bar_change})
+      }
+
+      var nop = function(){}
+
       if($(this).children("video").length == 0){
         var placeholder = $(this).children(".vid-placeholder")
         var src = placeholder.attr("url");
         duration = parseInt(placeholder.attr("duration"));
-        var video = $('<video controls><source src="' + src + '" type=\'video/webm;codecs="vp8, vorbis"\'/></video>')
+        video = $('<video controls><source src="' + src + '" type=\'video/webm;codecs="vp8, vorbis"\'/></video>')
         placeholder.before(video);
         placeholder.before($("<div id='bar'></div>"));
-        $("#bar").progressbar({value: 30, max: duration})
+        // $("#bar").progressbar({value: 30, max: duration})
+        $("#bar").slider({value: 30,
+          max: duration,
+          range: "min"
+        })
+        $("#bar").mousedown(function(e){
+          // e.stopPropagation();
+          video.get(0).pause();
+          // console.log("down")
+          video.unbind("timeupdate")
+          normal_bar_change()
+          $("#bar").slider({slide: normal_bar_change});
+        })
+        $("#bar").mouseup(function(e){
+          // e.stopPropagation();
+          // console.log("up")
+          // normal_bar_change()
+          video.on("timeupdate",normal_vid_change)
+          $("#bar").slider("option","slide","");
+          // $("#bar").slider("option","change","");
+          video.get(0).play();
+          video.focus()
+        })
         $("#bar").show();
       }else{
-        var video = $(this).children("video");
+        video = $(this).children("video");
   			video.toggle();
       }
 
@@ -93,14 +147,16 @@ $(function(){
 			video.get(0).load();
 			video.get(0).play();
 
-      video.on("timeupdate",function(){
-        var time = Math.round(this.currentTime);
-        if(start == 0){
-          start = time;
-        }
-        var d = time - start
-        $("#bar").progressbar({value: d})
-      })
+      video.on("timeupdate",normal_vid_change)
+
+
+
+      // $("#bar").change(function(){
+      //   var val = $(this).slider("option", "value");
+      //   alert(val);
+      //   video.currentTime = this.value;
+      // })
+
 
 
 
