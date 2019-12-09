@@ -24,13 +24,14 @@ $(function(){
 
   $(".vid").each(function(){
 
+    var tabs = parseInt($(this).attr("tab"));
+
     if($(this).attr("done") === "true"){
       $(this).css("background-color","grey");
     }else{
       $(this).css("background-color",colors[tabs % colors.length]);
     }
 
-    var tabs = parseInt($(this).attr("tab"));
     tabs *= 40;
     $(this).css("margin-left",tabs + "px")
     // console.log(tabs + "px");

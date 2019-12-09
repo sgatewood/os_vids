@@ -15,17 +15,24 @@ segments:
 
   - name: "Imitate: How close?"
     start: "08:36"
-    tab: 0
+    tab: 1
     notes: "notes2.md"
     done: true
 
-  - name: "Multiple techniques"
+  - name: "Other techniques"
     start: "10:44"
-    tab: 0
+    tab: 1
+    notes: "notes3.md"
+    done: true
 
   - name: "VM Layering"
     start: "12:00"
     tab: 0
+    notes: "notes4.md"
+
+  - name: "wip"
+    start: "12:34"
+    tab: 1
 
   - name: "Virtual machine execution pieces"
     start: "17:23"
@@ -35,8 +42,9 @@ segments:
     start: "18:13"
     tab: 0
 
-  - name: ""
+  - name: "The rest..."
     start: "32:41"
+    stop: "01:15:30"
     tab: 0
 
 #   - name: ""
