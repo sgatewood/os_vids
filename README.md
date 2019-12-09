@@ -13,7 +13,7 @@ Obvious credits for the actual videos to Professor Charles Reiss.
 - The green bar should be clickable.
 - "Go Back" just refreshes the page, so you can also just do that. :p
 - If focused on a video, you can press X to restart the segment
-- I would recommend downloading this Chrome extension (and keep it, so you can speed through ads).
+- I would recommend downloading [this Chrome extension](https://chrome.google.com/webstore/detail/video-speed-controller/nffaoalbilbmmfgbnbgppjihopabppdk?hl=en) (and keep it, so you can speed through ads).
 - Much of this was hastily coded, so I'm sorry if it explodes on you. It seems to work for me in Google Chrome.
 
 
