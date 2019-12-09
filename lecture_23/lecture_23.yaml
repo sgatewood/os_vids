@@ -4,21 +4,27 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "2-phase commit: Normal operation"
     start: "04:10"
+    tab: 0
 
   - name: "Some failure cases / Assignment (split this up)"
     start: "07:31"
+    tab: 0
 
   - name: "extending voting / quorums (split this up)"
     start: "26:22"
+    tab: 0
 
   - name: "Network filesystems"
     start: "38:01"
+    tab: 0
 
   - name: "NFSv2 (break this up)"
     start: "41:42"
+    tab: 0
 
 #   - name: ""
 #     start: ""

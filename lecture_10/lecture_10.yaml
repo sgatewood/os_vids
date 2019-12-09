@@ -5,55 +5,72 @@ segments:
   - name: "Monitors/Condition Variables"
     start: "40:03"
     notes: "monitors_condition_vars.md"
+    tab: 0
 
   - name: "Pthreads API vs Object Oriented Languages"
     start: "41:02"
+    tab: 0
 
   - name: "Monitor idea"
     start: "41:46"
+    tab: 0
 
   - name: "Condvar Operations"
     start: "42:58"
+    tab: 0
 
   - name: "pthread cv usage"
     start: "45:58"
+    tab: 0
 
   - name: "WaitForFinish timeline 1"
     start: "48:27"
+    tab: 0
 
   - name: "WaitForFinish timeline 2"
     start: "49:45"
+    tab: 0
 
   - name: "Why the loop?"
     start: "50:13"
+    tab: 0
 
   - name: "Unbounded buffer producer/consumer"
     start: "51:53"
+    tab: 0
 
   - name: "Timeline for producer/consumer: 0 iterations"
     start: "56:53"
+    tab: 0
 
   - name: "Timelixne for producer/consumer: 1 iteration"
     start: "57:40"
+    tab: 0
 
   - name: "Timelixne for producer/consumer: 2+ iterations"
     start: "58:18"
+    tab: 0
 
   - name: "Hoare vs Mesa monitors"
     start: "01:00:26"
+    tab: 0
 
   - name: "Bounded buffer producer/consumer"
     start: "01:04:01"
+    tab: 0
 
   - name: "Monitor pattern"
     start: "01:08:12"
+    tab: 0
 
   - name: "Monitors rules of thumb"
     start: "01:09:56"
+    tab: 0
 
   - name: "Monitor exercise"
     start: "01:13:18"
     stop: "01:16:00"
+    tab: 0
 
 #   - name: ""
 #     start: ""

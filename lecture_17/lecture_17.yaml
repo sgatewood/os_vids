@@ -4,54 +4,71 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "Device/File operations"
     start: "06:06"
+    tab: 0
 
   - name: "Device Driver flow"
     start: "11:04"
+    tab: 0
 
   - name: "xv6: Device files"
     start: "15:06"
+    tab: 0
 
   - name: "xv6: Reading/top half"
     start: "17:11"
+    tab: 0
 
   - name: "xv6: Bottom half"
     start: "22:14"
+    tab: 0
 
   - name: "Connecting Devices"
     start: "23:50"
+    tab: 0
 
   - name: "Devices as magic memory"
     start: "28:32"
+    tab: 0
 
   - name: "What about Caching?"
     start: "32:36"
+    tab: 0
 
   - name: "Aside: I/O Space"
     start: "33:55"
+    tab: 0
 
   - name: "xv6 keyboard access"
     start: "35:40"
+    tab: 0
 
   - name: "Programmed I/O; Direct Memory Access (DMA)"
     start: "37:42"
+    tab: 0
 
   - name: "OS puts things where it wants"
     start: "43:03"
+    tab: 0
 
   - name: "Exercise"
     start: "47:02"
+    tab: 0
 
   - name: "IO MMUs"
     start: "53:11"
+    tab: 0
 
   - name: "Devices Summary"
     start: "55:45"
+    tab: 0
 
   - name: "Filesystems"
     start: "58:57"
+    tab: 0
 
 #   - name: ""
 #     start: ""

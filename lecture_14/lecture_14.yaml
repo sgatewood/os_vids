@@ -4,54 +4,71 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "x86-32 page table entry vs addresses (ORing the flag bits)"
     start: "06:24"
+    tab: 0
 
   - name: "xv6: Constructing Page tables"
     start: "07:13"
+    tab: 0
 
   - name: "xv6: Using the page table macros"
     start: "07:59"
+    tab: 0
 
   - name: "xv6: Page table utility functions"
     start: "10:56"
+    tab: 0
 
   - name: "kalloc/free"
     start: "11:17"
+    tab: 0
 
   - name: "walkpgdir and mappages"
     start: "11:46"
+    tab: 0
 
   - name: "accockvm, allocuvm, deallocuvm"
     start: "12:38"
+    tab: 0
 
   - name: "xv6: Finding page table entries (walkpgdir)"
     start: "15:32"
+    tab: 0
 
   - name: "mappages"
     start: "24:17"
+    tab: 0
 
   - name: "setting process page tables (break this up)"
     start: "27:08"
+    tab: 0
 
   - name: "xv6: Page faults"
     start: "40:51"
+    tab: 0
 
   - name: "exercise"
     start: "49:00"
+    tab: 0
 
   - name: "Allocation on demand really"
     start: "58:52"
+    tab: 0
 
   - name: "xv6: Adding space on demand, vs real OSes"
     start: "01:00:10"
+    tab: 0
 
   - name: "Fast copies (copy-on-write)"
     start: "01:00:57"
+    tab: 0
 
   - name: "exercise"
     start: "01:07:19"
+    tab: 0
 
 #   - name: ""
 #     start: ""

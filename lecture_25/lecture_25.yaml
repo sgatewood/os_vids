@@ -4,27 +4,35 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "Virtual Machines"
     start: "05:12"
+    tab: 0
 
   - name: "Imitate: How close?"
     start: "08:37"
+    tab: 0
 
   - name: "Multiple techniques"
     start: "10:44"
+    tab: 0
 
   - name: "VM Layering"
     start: "12:00"
+    tab: 0
 
   - name: "Virtual machine execution pieces"
     start: "17:23"
+    tab: 0
 
   - name: "Trap and Emulate"
     start: "18:13"
+    tab: 0
 
   - name: ""
     start: "32:41"
+    tab: 0
 
 #   - name: ""
 #     start: ""

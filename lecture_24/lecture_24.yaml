@@ -4,24 +4,31 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "Authorization / User IDs"
     start: "03:31"
+    tab: 0
 
   - name: "Posix User IDs and Groups"
     start: "07:15"
+    tab: 0
 
   - name: "File permissions"
     start: "15:08"
+    tab: 0
 
   - name: "Access Control Lists / Superuser"
     start: "18:02"
+    tab: 0
 
   - name: "Logging in / Sudo / Setuid programs"
     start: "25:13"
+    tab: 0
 
   - name: "Capabilities"
     start: "57:38"
+    tab: 0
 
 #   - name: ""
 #     start: ""

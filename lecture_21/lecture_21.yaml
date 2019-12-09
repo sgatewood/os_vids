@@ -4,69 +4,91 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "Mounting Filesystems"
     start: "05:43"
+    tab: 0
 
   - name: "Kernel FS abstractions"
     start: "09:14"
+    tab: 0
 
   - name: "Distributed systems"
     start: "10:43"
+    tab: 0
 
   - name: "Client-server model"
     start: "12:00"
+    tab: 0
 
   - name: "Peer-to-peer model"
     start: "15:40"
+    tab: 0
 
   - name: "Why Distributed systems?"
     start: "16:15"
+    tab: 0
 
   - name: "Communication / Mailbox model"
     start: "20:11"
+    tab: 0
 
   - name: "What about servers? / Connections"
     start: "22:21"
+    tab: 0
 
   - name: "Connections vs pipes"
     start: "26:50"
+    tab: 0
 
   - name: "Connections over mailboxes"
     start: "27:41"
+    tab: 0
 
   - name: "Connection missing pieces / names and addresses"
     start: "28:40"
+    tab: 0
 
   - name: "hostnames / DNS"
     start: "32:37"
+    tab: 0
 
   - name: "IPv4 addresses"
     start: "35:57"
+    tab: 0
 
   - name: "IPv6 addresses"
     start: "40:12"
+    tab: 0
 
   - name: "Port numbers"
     start: "41:54"
+    tab: 0
 
   - name: "Protocols"
     start: "43:35"
+    tab: 0
 
   - name: "Sockets"
     start: "46:41"
+    tab: 0
 
   - name: "Connections in TCP/IP"
     start: "50:28"
+    tab: 0
 
   - name: "Client/server flow"
     start: "52:57"
+    tab: 0
 
   - name: "Local sockets"
     start: "01:03:47"
+    tab: 0
 
   - name: "Remote procedure calls (RPCs)"
     start: "01:06:57"
+    tab: 0
 
 #   - name: ""
 #     start: ""

@@ -4,66 +4,87 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "Copy-on-Write cases"
     start: "04:31"
+    tab: 0
 
   - name: "mmap"
     start: "06:27"
+    tab: 0
 
   - name: "Mapped pages (Read only)"
     start: "13:08"
+    tab: 0
 
   - name: "Shared mmap"
     start: "16:17"
+    tab: 0
 
   - name: "Private mappings"
     start: "18:39"
+    tab: 0
 
   - name: "Mapped pages (no backing file)"
     start: "22:13"
+    tab: 0
 
   - name: "Swapping with Copy-on-Write"
     start: "24:42"
+    tab: 0
 
   - name: "Swapping and Memory (Split this up)"
     start: "26:06"
+    tab: 0
 
   - name: "Memory as a cache for disk"
     start: "31:33"
+    tab: 0
 
   - name: "Page cache components"
     start: "33:21"
+    tab: 0
 
   - name: "Linux: forward mapping"
     start: "35:18"
+    tab: 0
 
   - name: "Linux: Tracking files in memory"
     start: "39:16"
+    tab: 0
 
   - name: "Tracking locations on disk?"
     start: "39:49"
+    tab: 0
 
   - name: "Finding free pages"
     start: "42:00"
+    tab: 0
 
   - name: "Page replacement"
     start: "48:02"
+    tab: 0
 
   - name: "Page replacement goals"
     start: "49:14"
+    tab: 0
 
   - name: "Maximizing hit rate / Belady's MIN"
     start: "51:22"
+    tab: 0
 
   - name: "Predicting the future: the working set model (break up)"
     start: "55:55"
+    tab: 0
 
   - name: "LRU implementation"
     start: "01:04:09"
+    tab: 0
 
   - name: "Practical implementation"
     start: "01:05:58"
+    tab: 0
 
 #   - name: ""
 #     start: ""

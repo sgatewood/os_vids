@@ -4,45 +4,59 @@ segments:
 
   - name: "Filesystems 4"
     start: ""
+    tab: 0
 
   - name: "Filesystem reliability / Hard drive atomicity"
     start: "10:32"
+    tab: 0
 
   - name: "Reliability issues"
     start: "12:04"
+    tab: 0
 
   - name: "Recall: FAT file creation / exercise in fat ordering"
     start: "12:55"
+    tab: 0
 
   - name: "Exercise 2: xv6 FS ordering"
     start: "30:05"
+    tab: 0
 
   - name: "Recovery with careful ordering"
     start: "33:45"
+    tab: 0
 
   - name: "Exercise: Unlink"
     start: "37:04"
+    tab: 0
 
   - name: "fsck / Ordering and disk performance"
     start: "43:19"
+    tab: 0
 
   - name: "Beyond ordering: transactions / redo logging"
     start: "44:52"
+    tab: 0
 
   - name: "The xv6 journal"
     start: "57:36"
+    tab: 0
 
   - name: "What is a transaction? / Redo logging performance"
     start: "01:01:27"
+    tab: 0
 
   - name: "Degrees of consistency"
     start: "01:04:06"
+    tab: 0
 
   - name: "Multiple copies: Mirroring disks"
     start: "01:06:03"
+    tab: 0
 
   - name: "Snapshots"
     start: "01:10:41"
+    tab: 0
 
 #   - name: ""
 #     start: ""

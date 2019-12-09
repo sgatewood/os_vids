@@ -4,36 +4,47 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "xv6 filesystem"
     start: "04:15"
+    tab: 0
 
   - name: "Direct and indirect blocks"
     start: "07:43"
+    tab: 0
 
   - name: "ext2 filesystem"
     start: "15:00"
+    tab: 0
 
   - name: "Exercise"
     start: "21:19"
+    tab: 0
 
   - name: "Sparse files"
     start: "30:39"
+    tab: 0
 
   - name: "Hard links"
     start: "33:40"
+    tab: 0
 
   - name: "xv6 FS pros vs FAT"
     start: "38:06"
+    tab: 0
 
   - name: "Exercise"
     start: "38:59"
+    tab: 0
 
   - name: "xv6 filesystem performance issues"
     start: "46:54"
+    tab: 0
 
   - name: "Fast Filesystem"
     start: "48:23"
+    tab: 0
 
 #   - name: ""
 #     start: ""

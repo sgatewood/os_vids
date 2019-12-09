@@ -4,67 +4,88 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "Event based programming"
     start: "02:26"
+    tab: 0
 
   - name: "POSIX support for event loops"
     start: "06:12"
+    tab: 0
 
   - name: "Message passing"
     start: "06:58"
+    tab: 0
 
   - name: "Message passing API"
     start: "08:37"
+    tab: 0
 
   - name: "Message passing game of life"
     start: "10:09"
+    tab: 0
 
   - name: "Virtual Memory: A prereq note"
     start: "13:51"
+    tab: 0
 
   - name: "Address Translation"
     start: "15:36"
+    tab: 0
 
   - name: "Virtual memory concepts (Toy memory)"
     start: "17:58"
+    tab: 0
 
   - name: "Exercise: VPN and PO"
     start: "26:15"
+    tab: 0
 
   - name: "Page table visualization"
     start: "34:30"
+    tab: 0
 
   - name: "Storing Page table in memory"
     start: "36:58"
+    tab: 0
 
   - name: "Page table base register"
     start: "43:53"
+    tab: 0
 
   - name: "Two-level page table naming"
     start: "45:29"
+    tab: 0
 
   - name: "32-bit x86 paging"
     start: "46:40"
+    tab: 0
 
   - name: "Exercise 1"
     start: "49:03"
+    tab: 0
 
   - name: "Exercise 2"
     start: "56:38"
+    tab: 0
 
   - name: "xv6 memory layout"
     start: "01:02:38"
+    tab: 0
 
   - name: "xv6 program memory"
     start: "01:04:48"
+    tab: 0
 
   - name: "Guard page"
     start: "01:05:39"
+    tab: 0
 
   - name: "xv6 code for this"
     start: "01:06:58"
     stop: "01:14:17"
+    tab: 0
 
 #   - name: ""
 #     start: ""

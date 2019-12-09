@@ -4,39 +4,51 @@ segments:
 
   - name: "Finishing RPCs"
     start: ""
+    tab: 0
 
   - name: "Marshalling / IDL"
     start: "01:36"
+    tab: 0
 
   - name: "IDL + marshalling example"
     start: "06:49"
+    tab: 0
 
   - name: "GRPC"
     start: "08:56"
+    tab: 0
 
   - name: "RPC server implementation"
     start: "13:18"
+    tab: 0
 
   - name: "RPC Client implementation"
     start: "20:26"
+    tab: 0
 
   - name: "RPC non-transparency"
     start: "24:31"
+    tab: 0
 
   - name: "RPC Performance"
     start: "30:45"
+    tab: 0
 
   - name: "RPC Locally"
     start: "32:10"
+    tab: 0
 
   - name: "Network failure"
     start: "33:07"
+    tab: 0
 
   - name: "Machine failure"
     start: "40:03"
+    tab: 0
 
   - name: "Distributed transaction problem"
     start: "43:43"
+    tab: 0
 
 #   - name: ""
 #     start: ""

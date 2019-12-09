@@ -1,9 +1,0 @@
-function wait_then_run(){
-
-	fswatch . | (while read; do $@ && exit; done) || exit
-	afplay /System/Library/Sounds/Hero.aiff 
-	# ls /System/Library/Sounds/
-	echo restarting
-	wait_then_run $@
-}
-wait_then_run $@

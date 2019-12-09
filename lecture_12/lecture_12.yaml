@@ -4,73 +4,96 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "Reader / Writer priority"
     start: "01:30"
+    tab: 0
 
   - name: "In general: Choosing orderings"
     start: "02:12"
+    tab: 0
 
   - name: "Simulation of reader/writer lock"
     start: "02:43"
+    tab: 0
 
   - name: "rwlock exercise"
     start: "05:50"
+    tab: 0
 
   - name: "rwlock exercise 2"
     start: "16:10"
+    tab: 0
 
   - name: "The \"Cheeky\" solution"
     start: "18:26"
+    tab: 0
 
   - name: "Deadlock analogies"
     start: "19:04"
+    tab: 0
 
   - name: "pipe() deadlock"
     start: "20:36"
+    tab: 0
 
   - name: "Example: moving files"
     start: "22:23"
+    tab: 0
 
   - name: "Deadlock with memory"
     start: "26:18"
+    tab: 0
 
   - name: "Deadlock"
     start: "26:57"
+    tab: 0
 
   - name: "Deadlock vs Starvation"
     start: "28:35"
+    tab: 0
 
   - name: "Deadlock requirements"
     start: "29:50"
+    tab: 0
 
   - name: "Exercise: How is deadlock possible?"
     start: "31:41"
+    tab: 0
 
   - name: "Deadlock prevention techniques"
     start: "39:44"
+    tab: 0
 
   - name: "Abort and retry; Livelock"
     start: "44:39"
+    tab: 0
 
   - name: "Preventing Livelock"
     start: "47:42"
+    tab: 0
 
   - name: "Acquiring locks in a consistent order"
     start: "49:08"
+    tab: 0
 
   - name: "Request all resources at once"
     start: "55:46"
+    tab: 0
 
   - name: "Deadlock detection"
     start: "57:01"
+    tab: 0
 
   - name: "Using deadlock detection for prevention"
     start: "01:07:59"
+    tab: 0
 
   - name: "Beyond threads: Event-based programming"
     start: "01:09:15"
     stop: "01:14:48"
+    tab: 0
 
 #   - name: ""
 #     start: ""

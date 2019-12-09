@@ -23,6 +23,7 @@ for i in range(10,26):
             if key in segment:
                 val = segment[key].replace('"','\\"')
                 write('    %s: "%s"' % (key,val))
+        # write('    %s: %d' % ("tab",0))
         # for key in segment:
         #     if key not in ("name","start","notes","stop"):
         #         write("\033[1;31m", key ,"\033[0m")

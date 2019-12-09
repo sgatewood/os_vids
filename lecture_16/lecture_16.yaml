@@ -4,49 +4,64 @@ segments:
 
   - name: "Intro / Flashback"
     start: ""
+    tab: 0
 
   - name: "Second Chance"
     start: "12:28"
+    tab: 0
 
   - name: "Second Chance Cons / SEQ"
     start: "30:56"
+    tab: 0
 
   - name: "Clock Algorithms"
     start: "37:18"
+    tab: 0
 
   - name: "Lazy Replacement?"
     start: "39:10"
+    tab: 0
 
   - name: "Non-lazy writeback and eviction"
     start: "39:53"
+    tab: 0
 
   - name: "Problems with LRU"
     start: "44:38"
+    tab: 0
 
   - name: "CLOCK Pro"
     start: "48:08"
+    tab: 0
 
   - name: "default Linux page replacement summary"
     start: "53:51"
+    tab: 0
 
   - name: "Being proactive: readahead"
     start: "54:34"
+    tab: 0
 
   - name: "Linux readahead heuristics"
     start: "01:00:38"
+    tab: 0
 
   - name: "Thrashing"
     start: "01:03:31"
+    tab: 0
 
   - name: "\"Fair\" Page Replacement"
     start: "01:05:56"
+    tab: 0
 
   - name: "Page Cache / Replacement Summary"
     start: "01:06:51"
+    tab: 0
 
   - name: "Recall: Kernel buffering, Layering"
     start: "01:09:04"
     stop: "01:14:53"
+    tab: 0
 
 #   - name: ""
 #     start: ""
