@@ -124,6 +124,7 @@ segments:
 
   - name: "Typical RPC data flow"
     start: "01:11:10"
+    stop: "01:14:43"
     tab: 1
 
   # - name: "END"
