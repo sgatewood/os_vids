@@ -23,10 +23,33 @@ $(function(){
     $(this).css("background-color",colors[tabs % colors.length])
     tabs *= 40;
     $(this).css("margin-left",tabs + "px")
-    console.log(tabs + "px");
+    // console.log(tabs + "px");
+    // $(this).css("")
+    $(this).prop("bg",$(this).css("background-color"));
   });
 
+  var no = false;
+
+  $(".vid").mouseenter(function(){
+    if(no){
+      return false;
+    }
+    $(this).prop("backup")
+    $(this).css("background-color","white")
+  });
+
+  $(".vid").mouseleave(function(){
+    if(no){
+      return false;
+    }
+    $(this).css("background-color",$(this).prop("bg"))
+  });
+
+
 	$(".vid").click(function(){
+    no = true;
+    $(this).mouseenter(function(){});
+    $(this).mouseleave(function(){});
 		if(!$(this).attr("toggled")){
       $(this).css("margin-left","")
 			toggle($(this),"toggled");
