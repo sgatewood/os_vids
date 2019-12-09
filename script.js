@@ -10,11 +10,15 @@ function toggle(el,attr){
 
 $(function(){
 
+  $(".notes").each(function(){
+    var simplemde = new SimpleMDE({ element: $(this)[0]});
+  })
+
 	// $("video").hide();
 	$(".go-back").hide();
 	$(".vid hr").hide();
 	$(".vid br").hide();
-  $(".notes").hide();
+  $(".notes-container").hide();
 
   var colors = ["#9ccdea","#f5a3a3","#f9f995","#9cff9c","#fbc4fb","#FFCD81"];
 
@@ -130,7 +134,7 @@ $(function(){
 			$(this).children(".go-back").toggle();
 			$(this).children("hr").toggle();
 			$(this).children("br").toggle();
-			$(this).children(".notes").toggle();
+			$(this).children(".notes-container").toggle();
 			$(".vid").not($(this)).toggle();
 			// $(this).children("h1").css("font-size","40px");
 			$(this).css("text-align","center")
@@ -174,14 +178,14 @@ $(function(){
 		parent.children(".go-back").toggle();
 		parent.children("hr").toggle();
 		parent.children("br").toggle();
-		parent.children(".notes").toggle();
+		parent.children(".notes-container").toggle();
 		$(".vid").not(parent).toggle();
 		parent.css("text-align","")
 		parent.css("background-color","")
 		video.get(0).pause();
 	});
 
-	$("video .notes").click(function(event){
+	$("video .notes-container").click(function(event){
 		event.stopPropagation();
 	})
 

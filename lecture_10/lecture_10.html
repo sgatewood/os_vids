@@ -6,6 +6,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+	<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 	<script type="text/javascript" src="../script.js"></script>
 </head>
 <body>
@@ -14,14 +16,17 @@
 		<h1>Monitors/Condition Variables (00:59)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20190926-video-and-audio.webm#t=40:03,41:02' duration='59' style='display: none;'></div>
-		<div class='notes'>
-<ul>
-<li>Locks + what locks are missing</li>
-<li>Locks: Mutual exclusion</li>
-<li>Missing: Some way to wait</li>
-</ul>
-<p><strong>Condition Variables</strong></p>
-<p>Lock + CV's + shared Data = <strong>Monitor</strong></p>
+		<div class='notes-container'>
+		<textarea class='notes'>
+- Locks + what locks are missing
+  - Locks: Mutual exclusion
+  - Missing: Some way to wait
+
+**Condition Variables**
+
+Lock + CV's + shared Data = **Monitor**
+
+		</textarea>
 		</div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0">

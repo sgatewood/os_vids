@@ -29,6 +29,8 @@ def print_intro(file=sys.stdout):
     print_t(1,'<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>',file=file)
     print_t(1,'<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>',file=file)
     print_t(1,'<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">',file=file)
+    print_t(1,'<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">',file=file)
+    print_t(1,'<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>',file=file)
     print_t(1,'<script type="text/javascript" src="../script.js"></script>',file=file)
     print_t(0,"</head>",file=file)
     print_t(0,"<body>",file=file)
@@ -37,10 +39,14 @@ def print_closing(file=sys.stdout):
     print_t(0,"</body>",file=file)
     print_t(0,"</html>",file=file)
 
+def read_file(filepath):
+    y = open(filepath)
+    out = y.read()
+    y.close()
+    return out
+
 def get_markdown_html(filepath):
-    with open(filepath) as y:
-        md = y.read()
-    return markdown.markdown(md)
+    return markdown.markdown(read_file(filepath))
 
 def time_format(seconds):
     hours = str(seconds // 3600)
@@ -123,9 +129,13 @@ for i in range(len(segments)):
     print_video_tag(src,start,stop,duration,file=file)
 
     if "notes" in segment:
-        print_t(2,"<div class='notes'>",file=file)
-        print(get_markdown_html(path + "/" + segment["notes"]),file=file)
+        print_t(2,"<div class='notes-container'>",file=file)
+        print_t(2,"<textarea class='notes'>",file=file)
+        # print(get_markdown_html(path + "/" + segment["notes"]),file=file)
+        print(read_file(path + "/" + segment["notes"]),file=file)
+        print_t(2,"</textarea>",file=file)
         print_t(2,"</div>",file=file)
+
 
 
     print_t(1,'</div> <!-- vid -->',file=file)
