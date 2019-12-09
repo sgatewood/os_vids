@@ -8,6 +8,7 @@ segments:
 
   - name: "Virtual Machines"
     start: "05:12"
+    notes: "empty.md"
     tab: 0
 
   - name: "Imitate: How close?"
@@ -63,4 +64,3 @@ segments:
 
 #   - name: ""
 #     start: ""
-

@@ -130,10 +130,10 @@ for i in range(len(segments)):
 
     if "notes" in segment:
         print_t(2,"<div class='notes-container'>",file=file)
-        print_t(2,"<textarea class='notes'>",file=file)
-        # print(get_markdown_html(path + "/" + segment["notes"]),file=file)
-        print(read_file(path + "/" + segment["notes"]),file=file)
-        print_t(2,"</textarea>",file=file)
+        print_t(2,"<div class='notes'>",file=file)
+        print(get_markdown_html(path + "/" + segment["notes"]),file=file)
+        # print(read_file(path + "/" + segment["notes"]),file=file)
+        print_t(2,"</div>",file=file)
         print_t(2,"</div>",file=file)
 
 

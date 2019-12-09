@@ -10,9 +10,9 @@ function toggle(el,attr){
 
 $(function(){
 
-  $(".notes").each(function(){
-    var simplemde = new SimpleMDE({ element: $(this)[0]});
-  })
+  // $(".notes").each(function(){
+  //   var simplemde = new SimpleMDE({ element: $(this)[0]});
+  // })
 
 	// $("video").hide();
 	$(".go-back").hide();
