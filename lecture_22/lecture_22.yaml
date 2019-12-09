@@ -140,6 +140,7 @@ segments:
 
   - name: "Some failure cases"
     start: "01:13:16"
+    stop: "01:14:34"
     tab: 3
 
   # - name: "END"
