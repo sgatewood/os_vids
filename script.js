@@ -1,3 +1,5 @@
+// Stop laughing at my JQuery. ;-)
+
 function toggle(el,attr){
 	if(el.attr(attr)){
 		el.attr(attr,"");

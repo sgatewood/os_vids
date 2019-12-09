@@ -151,12 +151,12 @@ segments:
     tab: 3
     notes: "notes26.md"
 
-  - name: "wip"
+  - name: "Hardware Hypervisor support"
     start: "01:13:17"
     stop: "01:15:30"
     tab: 3
     notes: "notes27.md"
-    
+
 #   - name: ""
 #     start: ""
 
