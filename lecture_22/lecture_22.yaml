@@ -24,14 +24,14 @@ segments:
 
   - name: "RPC server implementation"
     start: "13:18"
-    tab: 0
+    tab: 1
 
   - name: "RPC Client implementation"
     start: "20:26"
-    tab: 0
+    tab: 1
 
   - name: "RPC non-transparency"
-    start: "24:31"
+    start: "24:30"
     tab: 0
 
   - name: "RPC Performance"
@@ -46,16 +46,104 @@ segments:
     start: "33:07"
     tab: 0
 
-  - name: "Machine failure"
+  - name: "Message lost"
+    start: "33:58"
+    tab: 1
+
+  - name: "Message delayed/reordered"
+    start: "38:11"
+    tab: 1
+
+  - name: "Machine failure: Two Models"
     start: "40:03"
     tab: 0
+
+  - name: "Dealing with machine failure"
+    start: "42:05"
+    tab: 1
 
   - name: "Distributed transaction problem"
     start: "43:43"
     tab: 0
 
+  - name: "Distributed transaction example"
+    start: "45:10"
+    tab: 1
+
+  - name: "Naive distributed transaction"
+    start: "46:17"
+    tab: 1
+
+  - name: "The centralized solution"
+    start: "48:36"
+    tab: 1
+
+  - name: "Decentralized solution properties"
+    start: "51:13"
+    tab: 1
+
+  - name: "Two-phase commit"
+    start: "52:19"
+    tab: 1
+
+  - name: "Persistent log"
+    start: "52:36"
+    tab: 2
+
+  - name: "Two-phase commit: roles"
+    start: "53:35"
+    tab: 2
+
+  - name: "Two-phase commit: phases"
+    start: "56:36"
+    tab: 2
+
+  - name: "Coordinator decision"
+    start: "57:51"
+    tab: 2
+
+  - name: "Finishing"
+    start: "58:10"
+    tab: 2
+
+  - name: "Two-phase commit: blocking"
+    start: "59:01"
+    tab: 2
+
+  - name: "Two-phase commit messages"
+    start: "01:04:52"
+    tab: 2
+
+  - name: "Coordinator State machine (simplified)"
+    start: "01:05:35"
+    tab: 2
+
+  - name: "Coordinator failure recovery"
+    start: "01:07:27"
+    tab: 3
+
+  - name: "Coordinator State machine (un-simplified)"
+    start: "01:09:11"
+    tab: 3
+
+  - name: "Worker state machine"
+    start: "01:10:11"
+    tab: 3
+
+  - name: "State machine missing details"
+    start: "01:11:03"
+    tab: 3
+
+  - name: "2-phase commit: normal operation"
+    start: "01:12:23"
+    tab: 3
+
+  - name: "Some failure cases"
+    start: "01:13:16"
+    tab: 3
+
   - name: "END"
-    start: "43:43"
+    start: "01:14:34"
     stop: "01:14:34"
     tab: 0
 
