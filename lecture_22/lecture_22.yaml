@@ -142,10 +142,10 @@ segments:
     start: "01:13:16"
     tab: 3
 
-  - name: "END"
-    start: "01:14:34"
-    stop: "01:14:34"
-    tab: 0
+  # - name: "END"
+  #   start: "01:14:34"
+  #   stop: "01:14:34"
+  #   tab: 0
 
 #   - name: ""
 #     start: ""
