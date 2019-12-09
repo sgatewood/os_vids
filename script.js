@@ -45,6 +45,7 @@ $(function(){
     $(this).css("background-color",$(this).prop("bg"))
   });
 
+  var start = 0;
 
 	$(".vid").click(function(){
     no = true;
@@ -54,11 +55,18 @@ $(function(){
       $(this).css("margin-left","")
 			toggle($(this),"toggled");
 
+      var duration = 0;
+      var start = 0;
+
       if($(this).children("video").length == 0){
         var placeholder = $(this).children(".vid-placeholder")
         var src = placeholder.attr("url");
+        duration = parseInt(placeholder.attr("duration"));
         var video = $('<video controls><source src="' + src + '" type=\'video/webm;codecs="vp8, vorbis"\'/></video>')
         placeholder.before(video);
+        placeholder.before($("<div id='bar'></div>"));
+        $("#bar").progressbar({value: 30, max: duration})
+        $("#bar").show();
       }else{
         var video = $(this).children("video");
   			video.toggle();
@@ -84,6 +92,18 @@ $(function(){
 			});
 			video.get(0).load();
 			video.get(0).play();
+
+      video.on("timeupdate",function(){
+        var time = Math.round(this.currentTime);
+        if(start == 0){
+          start = time;
+        }
+        var d = time - start
+        $("#bar").progressbar({value: d})
+      })
+
+
+
 		}
 	});
 

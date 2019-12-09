@@ -12,9 +12,9 @@ def print_t(tab_level,*args,**kwargs):
     print("\t" * tab_level,end="",**kwargs)
     print(*args,**kwargs)
 
-def print_video_tag(src,start,stop,file=sys.stdout):
+def print_video_tag(src,start,stop,duration,file=sys.stdout):
     src = "%s#t=%s,%s" % (src,str(start),str(stop))
-    print_t(2,"<div class='vid-placeholder' url='%s' style='display: none;'></div>" % src,file=file)
+    print_t(2,"<div class='vid-placeholder' url='%s' duration='%d' style='display: none;'></div>" % (src,duration),file=file)
     # print_t(2,"<video controls src='%s'>" % src,file=file)
     # print_t(3,'<source src="%s#t=%s,%s"' ,file=file)
     # print_t(3,"type='video/webm;codecs=\"vp8, vorbis\"'/>",file=file)
@@ -27,6 +27,8 @@ def print_intro(file=sys.stdout):
     print_t(1,"<title></title>",file=file)
     print_t(1,'<link rel="stylesheet" href="../styles.css">',file=file)
     print_t(1,'<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>',file=file)
+    print_t(1,'<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="crossorigin="anonymous"></script>',file=file)
+    print_t(1,'<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">',file=file)
     print_t(1,'<script type="text/javascript" src="../script.js"></script>',file=file)
     print_t(0,"</head>",file=file)
     print_t(0,"<body>",file=file)
@@ -69,7 +71,9 @@ def time_difference(start,stop):
         stop_minutes,stop_seconds = map(int,stop)
         stop_time_s = stop_minutes * 60 + stop_seconds
 
-    return time_format(stop_time_s-start_time_s)
+    return stop_time_s-start_time_s
+
+    # return time_format(stop_time_s-start_time_s)
 
 
 obj = get_attrs()
@@ -112,10 +116,11 @@ for i in range(len(segments)):
 
 
     print_t(1,'<div class="vid" tab="%d">' % tab,file=file)
-    print_t(2,"<h1>%s (%s)</h1>" % (segment["name"],time_difference(start,stop)),file=file)
+    duration = time_difference(start,stop)
+    print_t(2,"<h1>%s (%s)</h1>" % (segment["name"],time_format(duration)),file=file)
     print_t(2,"<h2 class='go-back'>Go Back</h2>",file=file)
 
-    print_video_tag(src,start,stop,file=file)
+    print_video_tag(src,start,stop,duration,file=file)
 
     if "notes" in segment:
         print_t(2,"<div class='notes'>",file=file)

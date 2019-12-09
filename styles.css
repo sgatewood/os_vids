@@ -48,3 +48,13 @@ video {
 	border-radius: 10px;
 	text-align: left;
 }
+
+#bar{
+  /* width: 100%; */
+  /* height: 30px; */
+  background: grey;
+}
+
+#bar > div{
+  background: green;
+}
