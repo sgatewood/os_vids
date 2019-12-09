@@ -120,13 +120,15 @@ for i in range(len(segments)):
 
     tab = segment.get("tab",0)
 
+    done = str(segment.get("done",False)).lower()
 
-    print_t(1,'<div class="vid" tab="%d">' % tab,file=file)
+    print_t(1,'<div class="vid" tab="%d" done="%s">' % (tab,done),file=file)
     duration = time_difference(start,stop)
     print_t(2,"<h1>%s (%s)</h1>" % (segment["name"],time_format(duration)),file=file)
     print_t(2,"<h2 class='go-back'>Go Back</h2>",file=file)
 
     print_video_tag(src,start,stop,duration,file=file)
+
 
     if "notes" in segment:
         print_t(2,"<div class='notes-container'>",file=file)

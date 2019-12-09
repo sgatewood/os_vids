@@ -12,51 +12,85 @@
 </head>
 <body>
 	<h1 id='name'>Virtual Machines</h1>
-	<div class="vid" tab="0">
+	<div class="vid" tab="0" done="true">
 		<h1>Intro / Flashback (05:12)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=00:00:00,05:12' duration='312' style='display: none;'></div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0">
-		<h1>Virtual Machines (03:25)</h1>
+	<div class="vid" tab="0" done="true">
+		<h1>Virtual Machines (03:24)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=05:12,08:37' duration='205' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=05:12,08:36' duration='204' style='display: none;'></div>
 		<div class='notes-container'>
 		<div class='notes'>
 <h1>Virtual Machines</h1>
 <ul>
-<li>System Virtual Machines</li>
-<li>Goal: Imitate hardware</li>
+<li><strong>System</strong> Virtual Machines</li>
+<li>Goal: <strong>Imitate hardware</strong></li>
+<li>What hardware?</li>
+<li>Whatever's easiest</li>
+<li>Running <strong>Operating Systems</strong></li>
+<li>Terms</li>
+<li><strong>Hypervisor</strong> (or "VM Monitor")<ul>
+<li>e.g. Virtualbox</li>
+<li>Sometimes a part of host OS</li>
+</ul>
+</li>
+<li><strong>Guest OS</strong><ul>
+<li>e.g Linux</li>
+<li>Application for the Hypervisor</li>
+</ul>
+</li>
+<li><strong>Host OS</strong><ul>
+<li>e.g. Windows</li>
+<li>Sometimes Host OS = Hypervisor</li>
+</ul>
+</li>
+<li>We'll assume Hypervisor = Host OS</li>
+<li>e.g. Hypervisor will have exception handlers</li>
+</ul>
+<p><a href="notes2.md">Next</a></p>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="0" done="true">
+		<h1>Imitate: How close? (02:08)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=08:36,10:44' duration='128' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Imitate: How close?</h1>
+<ul>
+<li><strong>Full Virtualization</strong></li>
+<li>Guest OS unmodified</li>
+<li><strong>Paravirtualization</strong></li>
+<li>Small changes to guest OS</li>
+<li>Fuzzy line</li>
 </ul>
 		</div>
 		</div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0">
-		<h1>Imitate: How close? (02:07)</h1>
-		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=08:37,10:44' duration='127' style='display: none;'></div>
-	</div> <!-- vid -->
-	<div class="vid" tab="0">
+	<div class="vid" tab="0" done="false">
 		<h1>Multiple techniques (01:16)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=10:44,12:00' duration='76' style='display: none;'></div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0">
+	<div class="vid" tab="0" done="false">
 		<h1>VM Layering (05:23)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=12:00,17:23' duration='323' style='display: none;'></div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0">
+	<div class="vid" tab="0" done="false">
 		<h1>Virtual machine execution pieces (00:50)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=17:23,18:13' duration='50' style='display: none;'></div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0">
+	<div class="vid" tab="0" done="false">
 		<h1>Trap and Emulate (14:28)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=18:13,32:41' duration='868' style='display: none;'></div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0">
+	<div class="vid" tab="0" done="false">
 		<h1> (98:27:19)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191203-video-and-audio.webm#t=32:41,99:00:00' duration='354439' style='display: none;'></div>

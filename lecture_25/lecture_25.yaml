@@ -5,15 +5,19 @@ segments:
   - name: "Intro / Flashback"
     start: ""
     tab: 0
+    done: true
 
   - name: "Virtual Machines"
     start: "05:12"
-    notes: "empty.md"
     tab: 0
+    notes: "notes1.md"
+    done: true
 
   - name: "Imitate: How close?"
-    start: "08:37"
+    start: "08:36"
     tab: 0
+    notes: "notes2.md"
+    done: true
 
   - name: "Multiple techniques"
     start: "10:44"

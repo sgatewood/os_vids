@@ -23,8 +23,14 @@ $(function(){
   var colors = ["#9ccdea","#f5a3a3","#f9f995","#9cff9c","#fbc4fb","#FFCD81"];
 
   $(".vid").each(function(){
+
+    if($(this).attr("done") === "true"){
+      $(this).css("background-color","grey");
+    }else{
+      $(this).css("background-color",colors[tabs % colors.length]);
+    }
+
     var tabs = parseInt($(this).attr("tab"));
-    $(this).css("background-color",colors[tabs % colors.length])
     tabs *= 40;
     $(this).css("margin-left",tabs + "px")
     // console.log(tabs + "px");
