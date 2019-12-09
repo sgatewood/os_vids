@@ -6,13 +6,17 @@ segments:
     start: ""
     tab: 0
 
-  - name: "Marshalling / IDL"
+  - name: "Marshalling"
     start: "01:36"
+    tab: 0
+
+  - name: "Interface Description Language (IDL)"
+    start: "03:11"
     tab: 0
 
   - name: "IDL + marshalling example"
     start: "06:49"
-    tab: 0
+    tab: 1
 
   - name: "GRPC"
     start: "08:56"
