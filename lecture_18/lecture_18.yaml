@@ -12,11 +12,15 @@ segments:
 
   - name: "FAT directory entries in C"
     start: "08:21"
-    tab: 0
+    tab: 1
 
   - name: "Nested directories"
     start: "13:23"
     tab: 0
+
+  - name: "Where is the root directory? (FAT disk header)"
+    start: "14:09"
+    tab: 1
 
   - name: "FAT: Creating a file"
     start: "19:18"
@@ -26,25 +30,70 @@ segments:
     start: "24:20"
     tab: 0
 
-  - name: "Exercise"
+  - name: "Exercise: How many entries/clusters?"
     start: "24:55"
     tab: 0
+    notes: "notes1.md"
 
-  - name: "FAT pros and cons / Hard Drives"
+  - name: "FAT pros and cons"
     start: "34:00"
     tab: 0
 
+  - name: "Hard Drives"
+    start: "34:40"
+    tab: 0
+
+  - name: "Sectors / Cylinders / etc."
+    start: "37:25"
+    tab: 1
+
+  - name: "Performance / Latency"
+    start: "38:57"
+    tab: 2
+
+  - name: "Sector numbers"
+    start: "43:08"
+    tab: 2
+
+  - name: "OS to disk interface"
+    start: "44:34"
+    tab: 2
+
+  - name: "Hard disks are unreliable"
+    start: "45:45"
+    tab: 1
+
+  - name: "Sector remapping"
+    start: "46:57"
+    tab: 2
+
   - name: "Disk Scheduling"
     start: "49:19"
-    tab: 0
+    tab: 1
+
+  - name: "Minimize seek time"
+    start: "50:15"
+    tab: 2
+
+  - name: "Minimize seek time"
+    start: "50:15"
+    tab: 2
+
+  - name: "SCAN; C-SCAN"
+    start: "52:35"
+    tab: 2
+
+  - name: "Disk scheduling summary"
+    start: "54:30"
+    tab: 2
 
   - name: "Caching in the Controller"
     start: "56:08"
-    tab: 0
+    tab: 1
 
   - name: "Disk performance and filesystems"
     start: "57:44"
-    tab: 0
+    tab: 1
 
   - name: "SSD's"
     start: "58:55"
@@ -54,8 +103,10 @@ segments:
     start: "01:02:42"
     tab: 0
 
-#   - name: ""
-#     start: ""
+  - name: "END"
+    start: "01:15:24"
+    stop: "01:15:24"
+    tab: 0
 
 #   - name: ""
 #     start: ""
@@ -84,3 +135,5 @@ segments:
 #   - name: ""
 #     start: ""
 
+#   - name: ""
+#     start: ""

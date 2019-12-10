@@ -22,15 +22,20 @@
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=04:23,08:21' duration='238' style='display: none;'></div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0" done="false">
+	<div class="vid" tab="1" done="false">
 		<h1>FAT directory entries in C (05:02)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=08:21,13:23' duration='302' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>Nested directories (05:55)</h1>
+		<h1>Nested directories (00:46)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=13:23,19:18' duration='355' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=13:23,14:09' duration='46' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Where is the root directory? (FAT disk header) (05:09)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=14:09,19:18' duration='309' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
 		<h1>FAT: Creating a file (05:02)</h1>
@@ -43,26 +48,120 @@
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=24:20,24:55' duration='35' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>Exercise (09:05)</h1>
+		<h1>Exercise: How many entries/clusters? (09:05)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=24:55,34:00' duration='545' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Stats</h1>
+<ul>
+<li>4 byte fat entries</li>
+<li>32 byte dir entries</li>
+<li>2048 byte clusters</li>
+</ul>
+<h1>1) 200 30 KB files</h1>
+<ul>
+<li>Directory cluster can have 64 entries<ul>
+<li>Need 4 clusters for directories</li>
+<li>4 FAT entries</li>
+</ul>
+</li>
+<li>30 KB files<ul>
+<li>15 clusters each</li>
+<li>200 * 15 = 3000 clusters</li>
+<li>3000 FAT entries</li>
+</ul>
+</li>
+<li><strong>Total: 3004 clusters/entries</strong></li>
+</ul>
+<h1>2) Directory of 2000 3KB files</h1>
+<ul>
+<li>Directory cluster can have 64 entries<ul>
+<li>Need 32 directory clusters</li>
+<li>32 FAT entries</li>
+</ul>
+</li>
+<li>Each file needs 2 clusters<ul>
+<li>4000 clusters</li>
+<li>4000 FAT entries</li>
+</ul>
+</li>
+<li><strong>Total: 4032 clusters/entries</strong></li>
+</ul>
+		</div>
+		</div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>FAT pros and cons / Hard Drives (15:19)</h1>
+		<h1>FAT pros and cons (00:40)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=34:00,49:19' duration='919' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=34:00,34:40' duration='40' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>Disk Scheduling (06:49)</h1>
+		<h1>Hard Drives (02:45)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=49:19,56:08' duration='409' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=34:40,37:25' duration='165' style='display: none;'></div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0" done="false">
+	<div class="vid" tab="1" done="false">
+		<h1>Sectors / Cylinders / etc. (01:32)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=37:25,38:57' duration='92' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Performance / Latency (04:11)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=38:57,43:08' duration='251' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Sector numbers (01:26)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=43:08,44:34' duration='86' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>OS to disk interface (01:11)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=44:34,45:45' duration='71' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Hard disks are unreliable (01:12)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=45:45,46:57' duration='72' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Sector remapping (02:22)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=46:57,49:19' duration='142' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Disk Scheduling (00:56)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=49:19,50:15' duration='56' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Minimize seek time (00:00)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=50:15,50:15' duration='0' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Minimize seek time (02:20)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=50:15,52:35' duration='140' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>SCAN; C-SCAN (01:55)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=52:35,54:30' duration='115' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Disk scheduling summary (01:38)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=54:30,56:08' duration='98' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
 		<h1>Caching in the Controller (01:36)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=56:08,57:44' duration='96' style='display: none;'></div>
 	</div> <!-- vid -->
-	<div class="vid" tab="0" done="false">
+	<div class="vid" tab="1" done="false">
 		<h1>Disk performance and filesystems (01:11)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=57:44,58:55' duration='71' style='display: none;'></div>
@@ -73,9 +172,14 @@
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=58:55,01:02:42' duration='227' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>Block remapping (97:57:18)</h1>
+		<h1>Block remapping (12:42)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=01:02:42,99:00:00' duration='352638' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=01:02:42,01:15:24' duration='762' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="0" done="false">
+		<h1>END (00:00)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191105-video-and-audio.webm#t=01:15:24,01:15:24' duration='0' style='display: none;'></div>
 	</div> <!-- vid -->
 </body>
 </html>
