@@ -129,12 +129,8 @@ segments:
 
   - name: "xv6 filesystem"
     start: "01:14:10"
-    tab: 1
-
-  - name: "END"
-    start: "01:15:24"
     stop: "01:15:24"
-    tab: 0
+    tab: 1
 
 #   - name: ""
 #     start: ""
