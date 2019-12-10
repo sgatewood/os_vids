@@ -5,6 +5,7 @@ function echo_changed_file(){
 function wait_then_run(){
 
 	fswatch . | (while read file; do python3 make.py `echo_changed_file $file` && exit; done) || exit
+	# ./refresh_chrome.sh
 	afplay /System/Library/Sounds/Hero.aiff
 	# ls /System/Library/Sounds/
 	echo restarting

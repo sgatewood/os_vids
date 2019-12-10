@@ -12,27 +12,48 @@ segments:
 
   - name: "Block devices"
     start: "09:27"
-    tab: 0
+    tab: 1
 
   - name: "Device Driver flow"
     start: "11:04"
     tab: 0
 
+  - name: 'Two parts of device driver flow'
+    start: "13:25"
+    tab: 1
+    notes: "notes1.md"
+
   - name: "xv6: Device files"
-    start: "15:06"
+    start: "15:05"
     tab: 0
+
+  - name: "xv6: Console devsw"
+    start: "16:39"
+    tab: 1
 
   - name: "xv6: Reading/top half"
     start: "17:11"
-    tab: 0
+    tab: 1
 
   - name: "xv6: Bottom half"
-    start: "22:14"
-    tab: 0
+    start: "21:58"
+    tab: 1
 
   - name: "Connecting Devices"
     start: "23:50"
     tab: 0
+
+  - name: "Control registers and buffers/queues"
+    start: "24:33"
+    tab: 1
+
+  - name: "Interrupt controller"
+    start: "26:59"
+    tab: 1
+
+  - name: "Bus Adaptors"
+    start: "27:47"
+    tab: 1
 
   - name: "Devices as magic memory"
     start: "28:32"
@@ -40,29 +61,39 @@ segments:
 
   - name: "What about Caching?"
     start: "32:36"
-    tab: 0
+    tab: 1
 
   - name: "Aside: I/O Space"
     start: "33:55"
-    tab: 0
+    tab: 1
 
   - name: "xv6 keyboard access"
     start: "35:40"
     tab: 0
 
-  - name: "Programmed I/O; Direct Memory Access (DMA)"
+  - name: "Programmed I/O"
     start: "37:42"
     tab: 0
 
-  - name: "OS puts things where it wants"
-    start: "43:03"
-    tab: 0
+  - name: "Direct Memory Access (DMA)"
+    start: "38:26"
+    tab: 1
+    notes: "notes2.md"
 
-  - name: "Exercise"
+  - name: "How DMA works"
+    start: "39:51"
+    tab: 1
+
+  - name: "OS puts things where it wants (zero-copy I/O)"
+    start: "43:03"
+    tab: 1
+
+  - name: "Exercise: How many context switches with device I/O"
     start: "47:02"
     tab: 0
+    notes: "notes3.md"
 
-  - name: "IO MMUs"
+  - name: "IOMMUs (I/O Memory Management Units)"
     start: "53:11"
     tab: 0
 
@@ -72,6 +103,11 @@ segments:
 
   - name: "Filesystems"
     start: "58:57"
+    tab: 0
+
+  - name: "END"
+    start: "01:15:58"
+    stop: "01:15:58"
     tab: 0
 
 #   - name: ""
