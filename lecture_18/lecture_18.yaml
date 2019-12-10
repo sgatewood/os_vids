@@ -95,13 +95,41 @@ segments:
     start: "57:44"
     tab: 1
 
-  - name: "SSD's"
+  - name: "Solid state disks (SSD's)"
     start: "58:55"
     tab: 0
 
+  - name: "Solid state disks (SSD's)"
+    start: "59:41"
+    tab: 1
+
+  - name: "Flash as disk"
+    start: "01:01:05"
+    tab: 1
+
   - name: "Block remapping"
     start: "01:02:42"
+    tab: 2
+
+  - name: "SSD Performance"
+    start: "01:09:49"
+    tab: 1
+
+  - name: "Extra SSD operations"
+    start: "01:10:30"
+    tab: 1
+
+  - name: "Aside: Future storage"
+    start: "01:12:30"
     tab: 0
+
+  - name: "xv6 filesystem"
+    start: "01:13:36"
+    tab: 0
+
+  - name: "xv6 filesystem"
+    start: "01:14:10"
+    tab: 1
 
   - name: "END"
     start: "01:15:24"
