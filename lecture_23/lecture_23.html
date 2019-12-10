@@ -18,29 +18,161 @@
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=00:00:00,04:10' duration='250' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>2-phase commit: Normal operation (03:21)</h1>
+		<h1>TPC: Normal operation (03:21)</h1>
 		<h2 class='go-back'>Go Back</h2>
 		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=04:10,07:31' duration='201' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>Some failure cases / Assignment (split this up) (18:51)</h1>
+		<h1>TPC: Some failure cases (00:57)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=07:31,26:22' duration='1131' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=07:31,08:28' duration='57' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Worker fails after C prepare (01:54)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=08:28,10:22' duration='114' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Problem</h1>
+<ul>
+<li>C sent Prepare, then worker failed</li>
+<li>C doesn't know if W got Prepare or not</li>
+</ul>
+<h1>Three strategies</h1>
+<ol>
+<li>C resends Prepare after a timeout</li>
+<li>C aborts</li>
+<li>W logged that it agreed to commit, so sends Agree-to-commit when it's up again (not required, but could make you abort less often)</li>
+</ol>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Network failure after C prepare (same strategies) (01:02)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=10:22,11:24' duration='62' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Worker failure after C commit (02:36)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=11:24,14:00' duration='156' style='display: none;'></div>
+		<div class='notes-container'>
+		<div class='notes'>
+<h1>Problem</h1>
+<ul>
+<li>C sent commit</li>
+<li>Worker/network fails</li>
+<li>Need to get C to resend commit message (can't abort now)</li>
+</ul>
+<h1>Strategies</h1>
+<ol>
+<li>W resends agree-to-commit vote</li>
+<li>C resends outcome somehow? (But how would it know?)</li>
+</ol>
+<h1>C resending outcomes</h1>
+<ul>
+<li>Have workes acknowledge the Commit message<ul>
+<li>Assignment: Whether or not you returned</li>
+</ul>
+</li>
+</ul>
+		</div>
+		</div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Timeouts (01:22)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=14:00,15:22' duration='82' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>2-phase assignment (01:36)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=15:22,16:58' duration='96' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Assignment: RPC (01:04)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=16:58,18:02' duration='64' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Assignment: Failure recovery (00:32)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=18:02,18:34' duration='32' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Assignment: Failure types (02:10)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=18:34,20:44' duration='130' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>Reordering (05:38)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=20:44,26:22' duration='338' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>extending voting / quorums (split this up) (11:39)</h1>
+		<h1>Extending voting (00:40)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=26:22,38:01' duration='699' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=26:22,27:02' duration='40' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Quorums (majority) (03:18)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=27:02,30:20' duration='198' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Different size quorums for different operations (02:07)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=30:20,32:27' duration='127' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>Quorum tricky details (01:31)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=32:27,33:58' duration='91' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>Raft (02:10)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=33:58,36:08' duration='130' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="3" done="false">
+		<h1>Quorums for Byzantine failures (01:53)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=36:08,38:01' duration='113' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>Network filesystems (03:41)</h1>
+		<h1>Network filesystems (00:51)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=38:01,41:42' duration='221' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=38:01,38:52' duration='51' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="1" done="false">
+		<h1>Problems (00:22)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=38:52,39:14' duration='22' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>What's the server storing? (00:55)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=39:14,40:09' duration='55' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>What if the client crashes? (00:53)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=40:09,41:02' duration='53' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="2" done="false">
+		<h1>What if the server crashes? (00:33)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=41:02,41:35' duration='33' style='display: none;'></div>
 	</div> <!-- vid -->
 	<div class="vid" tab="0" done="false">
-		<h1>NFSv2 (break this up) (98:18:18)</h1>
+		<h1>NFSv2 (break this up) (32:57)</h1>
 		<h2 class='go-back'>Go Back</h2>
-		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=41:42,99:00:00' duration='353898' style='display: none;'></div>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=41:35,01:14:32' duration='1977' style='display: none;'></div>
+	</div> <!-- vid -->
+	<div class="vid" tab="0" done="false">
+		<h1>END (00:00)</h1>
+		<h2 class='go-back'>Go Back</h2>
+		<div class='vid-placeholder' url='https://www.cs.virginia.edu/~cr4bd/4414/F2019/recordings/20191121-video-and-audio.webm#t=01:14:32,01:14:32' duration='0' style='display: none;'></div>
 	</div> <!-- vid -->
 </body>
 </html>

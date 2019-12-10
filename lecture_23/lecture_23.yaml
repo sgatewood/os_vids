@@ -6,24 +6,103 @@ segments:
     start: ""
     tab: 0
 
-  - name: "2-phase commit: Normal operation"
+  - name: "TPC: Normal operation"
     start: "04:10"
     tab: 0
 
-  - name: "Some failure cases / Assignment (split this up)"
+  - name: "TPC: Some failure cases"
     start: "07:31"
     tab: 0
 
-  - name: "extending voting / quorums (split this up)"
+  - name: "Worker fails after C prepare"
+    start: "08:28"
+    tab: 1
+    notes: "notes1.md"
+
+  - name: "Network failure after C prepare (same strategies)"
+    start: "10:22"
+    tab: 1
+
+  - name: "Worker failure after C commit"
+    start: "11:24"
+    tab: 1
+    notes: "notes2.md"
+
+  - name: "Timeouts"
+    start: "14:00"
+    tab: 1
+
+  - name: "2-phase assignment"
+    start: "15:22"
+    tab: 1
+
+  - name: "Assignment: RPC"
+    start: "16:58"
+    tab: 2
+
+  - name: "Assignment: Failure recovery"
+    start: "18:02"
+    tab: 2
+
+  - name: "Assignment: Failure types"
+    start: "18:34"
+    tab: 2
+
+  - name: "Reordering"
+    start: "20:44"
+    tab: 3
+
+  - name: "Extending voting"
     start: "26:22"
     tab: 0
+
+  - name: "Quorums (majority)"
+    start: "27:02"
+    tab: 1
+
+  - name: "Different size quorums for different operations"
+    start: "30:20"
+    tab: 2
+
+  - name: "Quorum tricky details"
+    start: "32:27"
+    tab: 2
+
+  - name: "Raft"
+    start: "33:58"
+    tab: 3
+
+  - name: "Quorums for Byzantine failures"
+    start: "36:08"
+    tab: 3
 
   - name: "Network filesystems"
     start: "38:01"
     tab: 0
 
+  - name: "Problems"
+    start: "38:52"
+    tab: 1
+
+  - name: "What's the server storing?"
+    start: "39:14"
+    tab: 2
+
+  - name: "What if the client crashes?"
+    start: "40:09"
+    tab: 2
+
+  - name: "What if the server crashes?"
+    start: "41:02"
+    tab: 2
+
   - name: "NFSv2 (break this up)"
-    start: "41:42"
+    start: "41:35"
+    tab: 0
+
+  - name: "END"
+    start: "01:14:32"
+    stop: "01:14:32"
     tab: 0
 
 #   - name: ""
@@ -55,4 +134,3 @@ segments:
 
 #   - name: ""
 #     start: ""
-
