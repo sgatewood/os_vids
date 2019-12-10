@@ -64,7 +64,7 @@ segments:
     start: "30:20"
     tab: 2
 
-  - name: "Quorum tricky details"
+  - name: "Tricky details"
     start: "32:27"
     tab: 2
 
@@ -96,14 +96,94 @@ segments:
     start: "41:02"
     tab: 2
 
-  - name: "NFSv2 (break this up)"
+  - name: "NFSv2"
     start: "41:35"
+    tab: 1
+
+  - name: "NFSv2 RPC calls"
+    start: "42:14"
+    tab: 2
+
+  - name: "NFSv2 client vs server"
+    start: "44:06"
+    tab: 2
+
+  - name: "Generation numbers"
+    start: "45:15"
+    tab: 2
+
+  - name: "Stateless protocol"
+    start: "46:49"
+    tab: 2
+
+  - name: 'Reading directories: Offset "cookie"'
+    start: "47:34"
+    tab: 3
+
+  - name: 'Statelessness vs Statefulness'
+    start: "49:28"
+    tab: 3
+
+  - name: 'Performance'
+    start: "50:54"
+    tab: 1
+
+  - name: 'Updating cached copies while staying consistent'
+    start: "52:02"
+    tab: 2
+
+  - name: "NFSv3's solution: allow inconsistency"
+    start: "54:17"
+    tab: 2
+
+  - name: "Open to close consistency model"
+    start: "59:13"
+    tab: 3
+
+  - name: "An alternative model"
+    start: "01:00:33"
+    tab: 3
+
+  - name: "AFSv2: a stateful server"
+    start: "01:01:21"
+    tab: 2
+
+  - name: "Last writer wins"
+    start: "01:03:07"
+    tab: 2
+
+  - name: "AFS caching: Callbacks"
+    start: "01:04:04"
+    tab: 2
+
+  - name: "Callback inconsistency"
+    start: "01:05:27"
+    tab: 3
+
+  - name: "NFS: working by blocks like normal"
+    start: "01:07:26"
+    tab: 2
+
+  - name: "Protection vs security"
+    start: "01:09:03"
     tab: 0
 
-  - name: "END"
-    start: "01:14:32"
+  - name: "Adversaries"
+    start: "01:10:39"
+    tab: 1
+
+  - name: "Authorization vs Authentication"
+    start: "01:11:45"
+    tab: 1
+
+  - name: "Authentication"
+    start: "01:12:44"
     stop: "01:14:32"
-    tab: 0
+    tab: 2
+
+  # - name: "END"
+  #   start: "01:14:32"
+  #   tab: 0
 
 #   - name: ""
 #     start: ""
