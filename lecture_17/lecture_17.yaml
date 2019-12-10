@@ -10,6 +10,10 @@ segments:
     start: "06:06"
     tab: 0
 
+  - name: "Block devices"
+    start: "09:27"
+    tab: 0
+
   - name: "Device Driver flow"
     start: "11:04"
     tab: 0
@@ -99,4 +103,3 @@ segments:
 
 #   - name: ""
 #     start: ""
-
