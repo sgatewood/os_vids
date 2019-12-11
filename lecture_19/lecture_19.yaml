@@ -68,7 +68,7 @@ segments:
     start: "38:06"
     tab: 0
 
-  - name: "Exercise"
+  - name: "Exercise: How many inodes/blocks?"
     start: "38:59"
     tab: 0
 
@@ -76,12 +76,52 @@ segments:
     start: "46:54"
     tab: 0
 
-  - name: "Fast Filesystem"
+  - name: "FFS (Fast Filesystem)"
     start: "48:23"
     tab: 0
 
-  - name: "END"
-    start: "01:14:15"
+  - name: "Block groups"
+    start: "48:46"
+    tab: 1
+
+  - name: "Allocation within block groups"
+    start: "51:34"
+    tab: 1
+
+  - name: "FFS block groups"
+    start: "52:51"
+    tab: 1
+
+  - name: "Fragments"
+    start: "54:33"
+    tab: 1
+
+  - name: "Non-FFS changes"
+    start: "57:40"
+    tab: 0
+
+  - name: "Extents"
+    start: "58:07"
+    tab: 1
+
+  - name: "Problem with extents"
+    start: "01:00:21"
+    tab: 2
+
+  - name: "Allocating extents"
+    start: "01:01:24"
+    tab: 3
+
+  - name: "Holes"
+    start: "01:02:08"
+    tab: 2
+
+  - name: "Efficient seeking with extents (non-binary search trees)"
+    start: "01:02:44"
+    tab: 3
+
+  - name: "xv6 problem solving summary"
+    start: "01:13:03"
     stop: "01:14:15"
     tab: 0
 
