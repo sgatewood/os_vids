@@ -81,9 +81,14 @@ def time_difference(start,stop):
 
     # return time_format(stop_time_s-start_time_s)
 
+LOCAL = True
 
 obj = get_attrs()
 src = obj["url"]
+if LOCAL:
+    fake = "../offline/%s.webm" % path
+    src = fake
+print("\033[1;33m", src ,"\033[0m")
 name = obj["name"]
 
 

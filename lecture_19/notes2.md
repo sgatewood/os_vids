@@ -1,0 +1,8 @@
+- 12 direct (12 K)
+- 1 indirect
+    - 256 ptrs (256K)
+- 1 double indirect
+    - 256 * 256 K
+- 1 triple indirect
+    - 256 * 256 * 256 K
+- 16,843,020 (~16K)
