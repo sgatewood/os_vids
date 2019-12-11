@@ -81,7 +81,7 @@ def time_difference(start,stop):
 
     # return time_format(stop_time_s-start_time_s)
 
-LOCAL = True
+LOCAL = False
 
 obj = get_attrs()
 src = obj["url"]
