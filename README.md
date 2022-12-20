@@ -7,6 +7,8 @@ Obvious credits for the actual videos to Professor Charles Reiss.
 
 [Currently deployed on my UVA CS account](http://www.cs.virginia.edu/~stg2bd/os_vids/)
 
+2022 Update: Now deployed [here](https://sgatewood.github.io/os_vids)
+
 # Notes
 
 - I'm still working on this, so some of these are much better than others. The ones with checkmarks have been finalized.
